@@ -1,0 +1,1 @@
+SELECT count(*) as count FROM test_taoq_reach.complaint_status;
