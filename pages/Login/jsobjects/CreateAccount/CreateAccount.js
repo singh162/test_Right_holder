@@ -79,7 +79,6 @@ export default {
 						showAlert('User created successfully!', 'success'); // Show success message
 						closeModal(Modal1.name);			
 						resetWidget(Modal1.name);
-
 					}
 				} catch (err) {
 					showAlert('Error creating user: ' + err.message, 'error'); // Show error message

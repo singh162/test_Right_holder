@@ -39,7 +39,9 @@
     "Status"
   ],
   "columnUpdatedAt": 1727682946940,
-  "columnWidthMap": {},
+  "columnWidthMap": {
+    "reason_of_approve_reject": 259
+  },
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": 0,
   "defaultSelectedRowIndices": [
