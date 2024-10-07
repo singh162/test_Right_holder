@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 6,
+  "bottomRow": 29,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -24,15 +24,15 @@
   "isDeprecated": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "f935emer3l",
-  "leftColumn": 17,
+  "key": "c27awnnpoy",
+  "leftColumn": 16,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 5,
-  "mobileLeftColumn": 20,
-  "mobileRightColumn": 36,
-  "mobileTopRow": 1,
+  "mobileBottomRow": 28,
+  "mobileLeftColumn": 21,
+  "mobileRightColumn": 37,
+  "mobileTopRow": 24,
   "needsErrorInfo": false,
   "onCanvasUI": {
     "disableParentSelection": false,
@@ -41,15 +41,13 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 6,
-  "originalTopRow": 2,
   "overflow": "NONE",
-  "parentColumnSpace": 18.828378677368164,
+  "parentColumnSpace": 16.116043090820312,
   "parentId": "e4lzsh4ai0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 43,
+  "rightColumn": 44,
   "searchTags": [
     "typography",
     "paragraph",
@@ -60,14 +58,14 @@
     "Suggested",
     "Content"
   ],
-  "text": "Add Complaints",
+  "text": "Infringing Details",
   "textAlign": "CENTER",
   "textColor": "#034059",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
-  "topRow": 2,
+  "topRow": 25,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "5vbygtvu6p",
-  "widgetName": "Text15"
+  "widgetId": "et56g36qys",
+  "widgetName": "Text20"
 }

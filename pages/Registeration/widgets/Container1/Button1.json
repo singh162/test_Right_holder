@@ -44,8 +44,8 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onClick": "{{ValidateInfo.validate();}}",
-  "originalBottomRow": 165,
-  "originalTopRow": 161,
+  "originalBottomRow": 159,
+  "originalTopRow": 155,
   "parentColumnSpace": 16.052734375,
   "parentId": "lre5o5g67c",
   "parentRowSpace": 10,
