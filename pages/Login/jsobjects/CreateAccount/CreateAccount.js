@@ -77,8 +77,8 @@ export default {
 					const response = await Insert_User.run(userPayload);
 					if (response) {
 						showAlert('User created successfully!', 'success'); // Show success message
-						closeModal(Modal1.name);			
-						resetWidget(Modal1.name);
+						await closeModal(Modal1.name);			
+						await	resetWidget(Modal1.name);
 					}
 				} catch (err) {
 					showAlert('Error creating user: ' + err.message, 'error'); // Show error message
@@ -86,8 +86,8 @@ export default {
 			}
 			else{
 				showAlert('User already created, try different EmailAddress or userName', 'warning'); // Show success message
-				closeModal(Modal1.name);
-				resetWidget(Modal1.name);
+				await closeModal(Modal1.name);
+				await resetWidget(Modal1.name);
 			}
 		}
 	}
