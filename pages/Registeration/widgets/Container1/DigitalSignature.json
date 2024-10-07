@@ -3,8 +3,8 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 124,
-  "boxShadow": "none",
+  "bottomRow": 120,
+  "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
   "defaultText": "",
   "displayName": "Input",
   "dynamicBindingPathList": [
@@ -50,8 +50,8 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 124,
-  "originalTopRow": 117,
+  "originalBottomRow": 120,
+  "originalTopRow": 113,
   "parentColumnSpace": 12.125,
   "parentId": "lre5o5g67c",
   "parentRowSpace": 10,
@@ -59,7 +59,7 @@
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 48,
+  "rightColumn": 44,
   "searchTags": [
     "form",
     "text input",
@@ -72,7 +72,7 @@
     "Inputs"
   ],
   "thumbnailSVG": "/static/media/thumbnail.a4eac1a16753ea7fc54cac7731f9ea6a.svg",
-  "topRow": 117,
+  "topRow": 113,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "ist3i97k31",

@@ -38,7 +38,7 @@
   "isLoading": false,
   "isVisible": "{{FilePicker1.files.length>0 ?\ntrue : false\n}}",
   "key": "jhxegbv4bv",
-  "leftColumn": 42,
+  "leftColumn": 47,
   "maxZoomLevel": 1,
   "mobileBottomRow": 113,
   "mobileLeftColumn": 42,
@@ -60,7 +60,7 @@
   "parentId": "lre5o5g67c",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 58,
+  "rightColumn": 63,
   "tags": [
     "Media"
   ],
