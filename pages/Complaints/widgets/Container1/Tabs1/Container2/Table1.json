@@ -31,6 +31,7 @@
     }
   },
   "columnOrder": [
+    "Date",
     "complaint_Case_id",
     "OrginalWebsite",
     "InfringingUrl",
@@ -38,8 +39,9 @@
     "reason_of_approve_reject",
     "Status"
   ],
-  "columnUpdatedAt": 1727682946940,
+  "columnUpdatedAt": 1728298219990,
   "columnWidthMap": {
+    "Date": 252,
     "OrginalWebsite": 245,
     "reason_of_approve_reject": 259
   },
@@ -86,6 +88,9 @@
     },
     {
       "key": "totalRecordsCount"
+    },
+    {
+      "key": "primaryColumns.Date.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -112,7 +117,7 @@
   "isSortable": true,
   "isVisible": true,
   "isVisibleDownload": true,
-  "isVisibleFilters": false,
+  "isVisibleFilters": true,
   "isVisiblePagination": true,
   "isVisibleSearch": true,
   "key": "or38kprknm",
@@ -139,6 +144,41 @@
   "parentId": "8gyi4u3w2d",
   "parentRowSpace": 10,
   "primaryColumns": {
+    "Date": {
+      "alias": "Date",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( moment(currentRow[\"Date\"]).format('YYYY-MM-DD HH:mm:ss')))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "Date",
+      "index": 5,
+      "inputFormat": "YYYY-MM-DD HH:mm",
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Date",
+      "notation": "standard",
+      "originalId": "Date",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "InfringingUrl": {
       "alias": "InfringingUrl",
       "allowCellWrapping": true,
@@ -211,7 +251,7 @@
       "alias": "Status",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Status\"] === 'Approved' ? \"#0fd926\" : (currentRow[\"Status\"] === 'InProgress' ? \"#808080\" : \"#ef4444\") ))}}",
+      "cellBackground": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Status\"] === 'Approved' ? \"#0fd926\" : (currentRow[\"Status\"] === 'InProgress' ? \"#808080\" : (currentRow[\"Status\"] === 'Rejected' ? \"#ef4444\" : (\n\tcurrentRow[\"Status\"] === 'Blocked' ? \"#14e82e\" :\"#d6ea0d\"\n))) ))}}",
       "columnType": "text",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Status\"]))}}",
       "currencyCode": "USD",
