@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "66fbe909af2b8e5a2a63f83d_271a49eb-8ceb-4246-8026-5f942f5f199c",
-  "id": "Login_checkRightHolderInfoExit",
+  "gitSyncId": "66fbe909af2b8e5a2a63f83d_14aef56f-bfac-4ada-b441-fa534dd63289",
+  "id": "Login_GetRightHolderInfo",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "select id,Status,rightHolderName from rightHolderProfile WHERE rightHolderUserId = '{{this.params.id}}'",
+      "body": "SELECT * FROM test_taoq_reach.rightHolderProfile where rightHolderUserId='{{appsmith.store.rightHolderUserId}}';",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ],
       "timeoutInMillisecond": 10000
@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
-    "name": "checkRightHolderInfoExit",
+    "executeOnLoad": true,
+    "name": "GetRightHolderInfo",
     "pageId": "Login",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

@@ -1,19 +1,25 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 18,
+  "bottomRow": 21,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
     },
     {
+      "key": "fontFamily"
+    },
+    {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
-  "fontFamily": "System Default",
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
   "fontSize": "1.25rem",
   "fontStyle": "BOLD",
   "hideCard": false,
@@ -21,15 +27,15 @@
   "isDeprecated": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "yaidg678k9",
-  "leftColumn": 5,
+  "key": "aymys6fh6w",
+  "leftColumn": 4,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 10,
-  "mobileLeftColumn": 5,
-  "mobileRightColumn": 21,
-  "mobileTopRow": 6,
+  "mobileBottomRow": 5,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 41,
+  "mobileTopRow": 1,
   "needsErrorInfo": false,
   "onCanvasUI": {
     "disableParentSelection": false,
@@ -38,12 +44,10 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 18,
-  "originalTopRow": 12,
+  "originalBottomRow": 21,
+  "originalTopRow": 1,
   "overflow": "NONE",
-  "parentColumnSpace": 13.05859375,
-  "parentId": "nvydae9d7n",
-  "parentRowSpace": 10,
+  "parentId": "87c2trxkqw",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 60,
@@ -57,14 +61,14 @@
     "Suggested",
     "Content"
   ],
-  "text": "Register a Complaint For Rightsholders, Copyright Owners Or Authorized Representatives",
+  "text": "  {{login.modalText}}\n\n",
   "textAlign": "CENTER",
   "textColor": "#034059",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
-  "topRow": 12,
+  "topRow": 1,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "fpc2ghpu30",
-  "widgetName": "Text2"
+  "widgetId": "xpzdhj74y0",
+  "widgetName": "Text5"
 }

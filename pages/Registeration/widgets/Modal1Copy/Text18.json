@@ -1,11 +1,14 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 18,
+  "bottomRow": 37,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
+    },
+    {
+      "key": "fontFamily"
     },
     {
       "key": "borderRadius"
@@ -13,7 +16,7 @@
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
-  "fontFamily": "System Default",
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
   "fontSize": "1.25rem",
   "fontStyle": "BOLD",
   "hideCard": false,
@@ -21,14 +24,14 @@
   "isDeprecated": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "yaidg678k9",
-  "leftColumn": 5,
+  "key": "fxz5utd6lf",
+  "leftColumn": 2,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
   "mobileBottomRow": 10,
-  "mobileLeftColumn": 5,
-  "mobileRightColumn": 21,
+  "mobileLeftColumn": 17,
+  "mobileRightColumn": 33,
   "mobileTopRow": 6,
   "needsErrorInfo": false,
   "onCanvasUI": {
@@ -38,15 +41,15 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 18,
-  "originalTopRow": 12,
+  "originalBottomRow": 17,
+  "originalTopRow": 2,
   "overflow": "NONE",
-  "parentColumnSpace": 13.05859375,
-  "parentId": "nvydae9d7n",
+  "parentColumnSpace": 10.3125,
+  "parentId": "qmt9ntxfh2",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 60,
+  "rightColumn": 63,
   "searchTags": [
     "typography",
     "paragraph",
@@ -57,14 +60,14 @@
     "Suggested",
     "Content"
   ],
-  "text": "Register a Complaint For Rightsholders, Copyright Owners Or Authorized Representatives",
+  "text": "Thank you for submitting your information and documents.\n\nWe have successfully received your request.\n\nYour details are currently being verified by our SAIP team.\n\nWe kindly ask for your patience during this process, which may take 2 to 4 days.\n\nOnce your request is approved, we will notify you via email.\n\nIn the meantime, feel free to check your profile regularly for updates.\n\nThank you for your understanding.",
   "textAlign": "CENTER",
-  "textColor": "#034059",
+  "textColor": "#006d6a",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
-  "topRow": 12,
+  "topRow": 2,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "fpc2ghpu30",
-  "widgetName": "Text2"
+  "widgetId": "8sfguvmu64",
+  "widgetName": "Text18"
 }
