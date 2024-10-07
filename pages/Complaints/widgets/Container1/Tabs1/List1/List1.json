@@ -119,7 +119,7 @@
   "itemBackgroundColor": "#FFFFFF",
   "itemSpacing": 8,
   "key": "vk5xiolwc7",
-  "leftColumn": 2,
+  "leftColumn": 1,
   "listData": "{{AddListInput.listArray}}",
   "mainCanvasId": "f9t656b764",
   "mainContainerId": "sn2grnjuxr",
@@ -146,7 +146,7 @@
   "renderMode": "CANVAS",
   "requiresFlatWidgetChildren": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 57,
+  "rightColumn": 56,
   "selectedItemView": "{{{}}}",
   "serverSidePagination": false,
   "tags": [

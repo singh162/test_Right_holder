@@ -210,7 +210,7 @@
       "alias": "Status",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Status\"] === 'Approved' ? \"#006d6a\" : (currentRow[\"Status\"] === 'InProgress' ? \"#808080\" : \"#ef4444\") ))}}",
+      "cellBackground": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Status\"] === 'Approved' ? \"#0fd926\" : (currentRow[\"Status\"] === 'InProgress' ? \"#808080\" : \"#ef4444\") ))}}",
       "columnType": "text",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Status\"]))}}",
       "currencyCode": "USD",

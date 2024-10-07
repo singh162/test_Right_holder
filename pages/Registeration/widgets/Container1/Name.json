@@ -16,6 +16,7 @@
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [],
   "errorMessage": "",
   "hideCard": false,
