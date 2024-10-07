@@ -40,6 +40,7 @@
   ],
   "columnUpdatedAt": 1727682946940,
   "columnWidthMap": {
+    "OrginalWebsite": 245,
     "reason_of_approve_reject": 259
   },
   "defaultPageSize": 0,
@@ -161,7 +162,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Infringing Url",
+      "label": "Infringing URL",
       "notation": "standard",
       "originalId": "InfringingUrl",
       "sticky": "",
@@ -195,7 +196,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Orginal Website",
+      "label": "Orginal Work / Website",
       "notation": "standard",
       "originalId": "OrginalWebsite",
       "sticky": "",
