@@ -43,6 +43,7 @@
   "columnWidthMap": {
     "Date": 252,
     "OrginalWebsite": 245,
+    "complaint_Case_id": 296,
     "reason_of_approve_reject": 259
   },
   "defaultPageSize": 0,
@@ -87,10 +88,10 @@
       "key": "primaryColumns.complaint_Case_id.computedValue"
     },
     {
-      "key": "totalRecordsCount"
+      "key": "primaryColumns.Date.computedValue"
     },
     {
-      "key": "primaryColumns.Date.computedValue"
+      "key": "totalRecordsCount"
     }
   ],
   "dynamicPropertyPathList": [
@@ -138,8 +139,8 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onPageChange": "{{GetViewComplaintStatus.run()}}",
-  "originalBottomRow": 43,
-  "originalTopRow": 8,
+  "originalBottomRow": 46,
+  "originalTopRow": 11,
   "parentColumnSpace": 10.981458187103271,
   "parentId": "8gyi4u3w2d",
   "parentRowSpace": 10,

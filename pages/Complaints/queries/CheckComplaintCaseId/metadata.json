@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66fbe909af2b8e5a2a63f83d_5161601a-6118-46ef-a03f-2732d14524d5",
-  "id": "Complaints_countViewComplaintStatus",
+  "gitSyncId": "66fbe909af2b8e5a2a63f83d_c5c6174e-d1c5-4538-8eb0-e783f24a142f",
+  "id": "Complaints_CheckComplaintCaseId",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT count(*) as count FROM complaint_status Inner JOIN complaints_form on complaint_status.complaint_form_id = complaints_form.complaint_form_id\nWHERE  complaints_form.rightHolderUserId = '{{appsmith.store.rightHolderUserId}}'  ",
+      "body": "SELECT complaint_Case_id \nFROM test_taoq_reach.complaints_form \nWHERE complaint_Case_id = '{{this.params.complaint_Case_id}}';",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,8 +27,8 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
-    "name": "countViewComplaintStatus",
+    "executeOnLoad": false,
+    "name": "CheckComplaintCaseId",
     "pageId": "Complaints",
     "userSetOnLoad": false
   }

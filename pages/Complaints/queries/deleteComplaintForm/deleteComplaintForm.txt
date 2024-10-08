@@ -1,1 +1,1 @@
-delete from complaints_form where test_taoq_reach.complaint_form_id ={{this.params.complaint_form_id}};
+delete from test_taoq_reach.complaints_form where complaint_form_id ={{this.params.complaint_form_id}};

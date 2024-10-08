@@ -105,7 +105,11 @@
       "key": "primaryKeys"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onItemClick"
+    }
+  ],
   "enhancements": true,
   "flexVerticalAlignment": "start",
   "gridType": "vertical",
@@ -136,6 +140,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
+  "onItemClick": "",
   "originalBottomRow": 55,
   "originalTopRow": 15,
   "pageSize": 1,
