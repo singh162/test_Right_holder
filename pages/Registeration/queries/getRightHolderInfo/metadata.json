@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM test_taoq_reach.rightHolderProfile where ;",
+      "body": "SELECT * FROM test_taoq_reach.rightHolderProfile;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

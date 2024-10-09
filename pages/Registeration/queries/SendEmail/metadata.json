@@ -17,7 +17,7 @@
           "isReplyTo": false,
           "replyTo": "saip@naxap.com",
           "subject": "Request for Verification of the Profile of {{HolderName.text}} Regarding the IP Violation Complaint",
-          "to": "jasmeet.singh@bytescare.com"
+          "to": "punnet@bytescare.com"
         }
       },
       "paginationType": "NONE",
