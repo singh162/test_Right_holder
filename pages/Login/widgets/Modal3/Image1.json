@@ -45,7 +45,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{showModal(Modal4.name);}}",
+  "onClick": "{{showModal(Modal5.name);}}",
   "originalBottomRow": 87,
   "originalTopRow": 81,
   "parentColumnSpace": 6.9375,
