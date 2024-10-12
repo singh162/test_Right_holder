@@ -39,7 +39,11 @@ export default {
 		console.log("Updated List after delete: ", this.listArray);
 
 	},
-
+	removeFileListOnCrosssClick(){
+		resetWidget("FilePicker1", true);
+		List1.listData[List1.pageNo-1].FilePicker1 = "";
+		this.listArray[List1.pageNo-1].FilePicker1 = "";
+	},
 	// Function to handle input changes
 	handleInputChange(id, field, value) {
 		// Update the specific field of the relevant input row

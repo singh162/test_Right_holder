@@ -35,10 +35,10 @@
         "key": "body"
       },
       {
-        "key": "formData.send.attachments"
+        "key": "formData.send.subject"
       },
       {
-        "key": "formData.send.subject"
+        "key": "formData.send.attachments"
       }
     ],
     "executeOnLoad": false,

@@ -25,7 +25,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "c27awnnpoy",
-  "leftColumn": 16,
+  "leftColumn": 14,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -47,7 +47,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 44,
+  "rightColumn": 42,
   "searchTags": [
     "typography",
     "paragraph",

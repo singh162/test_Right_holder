@@ -81,7 +81,7 @@ export default {
 						await insertComplaintsStatusForm.run({
 							complaint_status_id: complaint_status_id,
 							complaint_form_id: complaint_form_id,
-							status: 'InProgress',
+							status: 'Under Review',
 							reason_of_approve_reject: null,
 							status_updated_by: null,
 							inserted_at: moment().format('YYYY-MM-DD HH:mm:ss'),
@@ -117,7 +117,15 @@ export default {
 			} else {
 				showAlert("All forms successfully submitted", "info");
 				closeModal(Modal2.name);
-				resetWidget("Select2", true);
+				AddListInput.listArray= [
+					{ 
+						id: this.index, 
+						input1: '', 
+						Description: '',
+						FilePicker1:'' 
+					}
+				],
+					resetWidget("Select2", true);
 				resetWidget("originalWork", true);
 				resetWidget("List1", true);
 				resetWidget("Checkbox1", true);
