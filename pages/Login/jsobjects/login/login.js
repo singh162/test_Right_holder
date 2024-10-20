@@ -54,7 +54,7 @@ export default {
 					if (checkData && checkData.length > 0) {
 						if (checkData[0].Status === "Under Review") {
 							this.modalText = `Dear ${checkData[0].rightHolderName},
-Thank you for your submission. Your details are currently being reviewed by SAIP team.
+Thank you for your submission. Your details are currently being reviewed by SAIP.
 We understand that waiting can be challenging, and we appreciate your patience as we work through this process.
 You will receive an email notification as soon as your verification is complete.
 
@@ -67,8 +67,8 @@ Would you like to view your profile?
 
 						} else if (checkData[0].Status === "Rejected") {
 							this.modalText = `Dear ${checkData[0].rightHolderName},
-We regret to inform you that your profile has not been approved by the SAIP team due to insufficient information or documentation.
-For further assistance and clarification, we kindly encourage you to reach out to the SAIP team directly. 
+We regret to inform you that your profile has not been approved by the SAIP due to insufficient information or documentation.
+For further assistance and clarification, we kindly encourage you to reach out to the team directly. 
 
 Would you like to view your profile?
 						`;
