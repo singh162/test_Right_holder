@@ -1,0 +1,82 @@
+{
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 61,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultModel": "{\n  \"tips\": [\n    \"Pass data to this widget in the default model field\",\n    \"Access data in the javascript file using the appsmith.model variable\",\n    \"Create events in the widget and trigger them in the javascript file using appsmith.triggerEvent('eventName')\",\n    \"Access data in CSS as var(--appsmith-model-{property-name})\"\n  ]\n}",
+  "displayName": "Custom",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onResetClick"
+    }
+  ],
+  "events": [
+    "onResetClick"
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.9b1065660dedd39cf997e3faa42244bc.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "n92ftu8lbx",
+  "leftColumn": 17,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 61,
+  "mobileLeftColumn": 17,
+  "mobileRightColumn": 40,
+  "mobileTopRow": 31,
+  "needsErrorInfo": false,
+  "onCanvasUI": {
+    "disableParentSelection": false,
+    "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+    "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  },
+  "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "parentColumnSpace": 17.828125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 40,
+  "searchTags": [
+    "external"
+  ],
+  "srcDoc": {
+    "css": ".app {\n  width: calc(1px * var(--appsmith-ui-width));\n  justify-content: center;\n  border-radius: 0px;\n  border: none;\n}\n.app .tip-container {\n  margin-bottom: 20px;\n}\n.app .tip-container h2 {\n  margin-bottom: 20px;\n  font-size: 16px;\n  font-weight: 700;\n}\n.app .tip-container .tip-header {\n  display: flex;\n  justify-content: space-between;\n  align-items: baseline;\n}\n.app .tip-container .tip-header div {\n  color: #999;\n}\n.app .button-container {\n  text-align: right;\n}\n.app .button-container button {\n  margin: 0 10px;\n  border-radius: var(--appsmith-theme-borderRadius) !important;\n}\n.app .button-container button.primary {\n  background: var(--appsmith-theme-primaryColor) !important;\n}\n.app .button-container button.reset:not([disabled]) {\n  color: var(--appsmith-theme-primaryColor) !important;\n  border-color: var(--appsmith-theme-primaryColor) !important;\n}",
+    "html": "<html>\n  <head>\n    <title>reCAPTCHA demo: Simple page</title>\n    <script src=\"https://www.google.com/recaptcha/enterprise.js\" async defer></script>\n  </head>\n  <body>\n    <form action=\"\" method=\"POST\">\n      <div class=\"g-recaptcha\" data-sitekey=\"6Le1hXQqAAAAAIw7995hzg8DjjMfu2ICIwt2TOhZ\" data-action=\"LOGIN\"></div>\n      <br/>\n      <input type=\"submit\" value=\"Submit\">\n    </form>\n  </body>\n</html>",
+    "js": "export default {\n  verifyCaptcha: async captchaResponse => {\n    const response = await fetch('https://www.google.com/recaptcha/api/siteverify', {\n      method: 'POST',\n      headers: {\n        'Content-Type': 'application/x-www-form-urlencoded'\n      },\n      body: new URLSearchParams({\n        secret: 'YOUR_SECRET_KEY',\n        // Replace with your reCAPTCHA secret key\n        response: captchaResponse\n      })\n    });\n    return response.json();\n  }\n};"
+  },
+  "tags": [
+    "Display"
+  ],
+  "theme": "{{appsmith.theme}}",
+  "thumbnailSVG": "/static/media/thumbnail.a7d7cde44fad9a0d4d490def43560a78.svg",
+  "topRow": 31,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": ".app {\n  width: calc(1px * var(--appsmith-ui-width));\n  justify-content: center;\n  border-radius: 0px;\n  border: none;\n  \n  .tip-container {\n    margin-bottom: 20px;\n\n    h2 {\n      margin-bottom: 20px;\n      font-size: 16px;\n      font-weight: 700;\n    }\n\n    .tip-header {\n      display: flex;\n      justify-content: space-between;\n      align-items: baseline;\n\n      div {\n        color: #999;\n      }\n    }\n  }\n\t\n\t.button-container {\n      text-align: right;\n\n      button {\n        margin: 0 10px;\n        border-radius: var(--appsmith-theme-borderRadius) !important;\n\n        &.primary {\n          background: var(--appsmith-theme-primaryColor) !important;\n        }\n\n        &.reset:not([disabled]) {\n          color: var(--appsmith-theme-primaryColor) !important;\n          border-color: var(--appsmith-theme-primaryColor) !important;\n        }\n      }\n    }\n}\n",
+    "html": "<html>\n  <head>\n    <title>reCAPTCHA demo: Simple page</title>\n    <script src=\"https://www.google.com/recaptcha/enterprise.js\" async defer></script>\n  </head>\n  <body>\n    <form action=\"\" method=\"POST\">\n      <div class=\"g-recaptcha\" data-sitekey=\"6Le1hXQqAAAAAIw7995hzg8DjjMfu2ICIwt2TOhZ\" data-action=\"LOGIN\"></div>\n      <br/>\n      <input type=\"submit\" value=\"Submit\">\n    </form>\n  </body>\n</html>",
+    "js": "export default {\n  verifyCaptcha: async (captchaResponse) => {\n    const response = await fetch('https://www.google.com/recaptcha/api/siteverify', {\n      method: 'POST',\n      headers: {\n        'Content-Type': 'application/x-www-form-urlencoded',\n      },\n      body: new URLSearchParams({\n        secret: 'YOUR_SECRET_KEY', // Replace with your reCAPTCHA secret key\n        response: captchaResponse,\n      }),\n    });\n    return response.json();\n  },\n};\n"
+  },
+  "version": 1,
+  "widgetId": "3v0imvgqro",
+  "widgetName": "Custom1"
+}

@@ -33,26 +33,7 @@ export default {
 	async submitRightHolderForm(){
 		try{
 			let rightHolderInfoId= this.generateUUID();
-
 			if(!await this.checkExpireUser()){
-				console.log({	rightHolderUserId: appsmith.store.rightHolderUserId,
-										 id: rightHolderInfoId,
-										 fullName: Name.text,
-										 rightHolderName: HolderName.text,
-										 company_name: CompanyName.text,
-										 email: EmailAddress.text,
-										 phoneNumber:  Select1.selectedOptionLabel +'-' + phoneNumber.text,
-										 address: Address.text,
-										 city: City.text,
-										 state: State.text,
-										 country: Select2Copy.selectedOptionLabel, // Replace with actual country value
-										 acknowledgment: Checkbox1Copy.isChecked,
-										 digitalSignature: DigitalSignature.text,
-										 document: FilePicker1.files.length > 0 ?FilePicker1.files[0].data
-										 : null,
-										 copyRightLetter: FilePicker2.files.length>0 ? FilePicker2.files[0].data : null,
-										 inserted_at: moment().format('YYYY-MM-DD HH:mm:ss'),
-										 updated_at: moment().format('YYYY-MM-DD HH:mm:ss')});
 				await AddRightHolderInfo.run(
 					{
 						rightHolderUserId: appsmith.store.rightHolderUserId,
@@ -69,9 +50,10 @@ export default {
 						acknowledgment: Checkbox1Copy.isChecked,
 						status: "Under Review",
 						digitalSignature: DigitalSignature.text,
-						document: FilePicker1.files.length > 0 ?FilePicker1.files[0].data
+						document: FilePicker1.files.length > 0 ?FilePicker1.files[0].data.replace(/^data:image\/\w+;base64,/, '')
 						: null,
-						copyRightLetter: FilePicker2.files.length>0 ? FilePicker2.files[0].data : null,
+						copyRightLetter: FilePicker2.files.length>0 ? FilePicker2.files[0].data.replace(/^data:image\/\w+;base64,/, '') : null,
+						contentOwnerShip : FilePicker1Copy.files.length > 0 ?FilePicker1Copy.files[0].data.replace(/^data:image\/\w+;base64,/, '') : null,
 						inserted_at: moment().format('YYYY-MM-DD HH:mm:ss'),
 						updated_at: moment().format('YYYY-MM-DD HH:mm:ss')
 					}
@@ -91,7 +73,7 @@ export default {
 			}
 		}
 		catch(ex){
-			showAlert("error inserting the form,Please try after some time","error");
+			showAlert(`error inserting the form,Please try after some time${ex.message}`,"error");
 		}
 	}
 }

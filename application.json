@@ -33,6 +33,14 @@
     {
       "id": "Complaints",
       "isDefault": false
+    },
+    {
+      "id": "Page1",
+      "isDefault": false
+    },
+    {
+      "id": "VerifyEmail",
+      "isDefault": false
     }
   ],
   "unpublishedApplicationDetail": {

@@ -9,12 +9,12 @@
   "animateLoading": true,
   "backgroundColor": "transparent",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 63,
+  "bottomRow": 82,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 330,
+      "bottomRow": 420,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -141,8 +141,8 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onItemClick": "",
-  "originalBottomRow": 55,
-  "originalTopRow": 15,
+  "originalBottomRow": 82,
+  "originalTopRow": 40,
   "pageSize": 1,
   "parentColumnSpace": 19.4447021484375,
   "parentId": "e4lzsh4ai0",
@@ -151,7 +151,7 @@
   "renderMode": "CANVAS",
   "requiresFlatWidgetChildren": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 57,
+  "rightColumn": 58,
   "selectedItemView": "{{{}}}",
   "serverSidePagination": false,
   "tags": [
@@ -159,7 +159,7 @@
   ],
   "templateHeight": 160,
   "thumbnailSVG": "/static/media/thumbnail.469b7e8d3a04de93014af9a7bc9ebe56.svg",
-  "topRow": 30,
+  "topRow": 40,
   "triggeredItemView": "{{{}}}",
   "type": "LIST_WIDGET_V2",
   "widgetId": "vasvtl6bp9",

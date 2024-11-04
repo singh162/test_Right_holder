@@ -9,7 +9,7 @@
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 390,
+      "bottomRow": 420,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -77,9 +77,9 @@
   "isLoading": false,
   "isVisible": true,
   "key": "dy3av5deko",
-  "leftColumn": 16,
-  "maxDynamicHeight": 40,
-  "minDynamicHeight": 39,
+  "leftColumn": 15,
+  "maxDynamicHeight": 46,
+  "minDynamicHeight": 42,
   "minWidth": 450,
   "mobileBottomRow": 28,
   "mobileLeftColumn": 10,
@@ -94,13 +94,13 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "originalBottomRow": 57,
-  "originalTopRow": 18,
+  "originalTopRow": 15,
   "parentColumnSpace": 17.237060546875,
   "parentId": "nvydae9d7n",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 49,
+  "rightColumn": 52,
   "searchTags": [
     "div",
     "parent",
@@ -111,7 +111,7 @@
     "Layout"
   ],
   "thumbnailSVG": "/static/media/thumbnail.6cb355b93146b5347bbb048a568ed446.svg",
-  "topRow": 18,
+  "topRow": 15,
   "type": "CONTAINER_WIDGET",
   "version": 1,
   "widgetId": "910koxm9qa",

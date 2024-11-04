@@ -6,11 +6,6 @@
     "pageId": "Login",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "variables": [
-      {
-        "name": "exitQuery",
-        "value": "''"
-      }
-    ]
+    "variables": []
   }
 }
