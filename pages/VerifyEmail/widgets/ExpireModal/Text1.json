@@ -12,6 +12,9 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -60,7 +63,7 @@
     "Suggested",
     "Content"
   ],
-  "text": "Link is Expired, Please resend the email by click onresend link <a href=\"#\" style=\"color: #007bff;\" onclick=\"/*yourResendFunction*/\">resend</a>",
+  "text": "Link is Expired, Please resend the email by click on resend link <a href=\"#\" style=\"color: #007bff;\" onclick=\"{{}}\">resend</a>",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",

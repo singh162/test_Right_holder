@@ -1,8 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 82,
-  "bottomRowBeforeCollapse": 99,
+  "bottomRow": 4,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "TERTIARY",
@@ -13,17 +12,6 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "isVisible"
-    }
-  ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "onClick"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -34,17 +22,18 @@
   "hideCard": false,
   "iconName": "cross",
   "iconSVG": "/static/media/icon.e5045469a82b76384d0c537fc9545012.svg",
+  "iconSize": 24,
   "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
-  "isVisible": "{{FilePicker1Copy.files.length>0 ?\ntrue : false\n}}",
-  "key": "gmywrfy382",
-  "leftColumn": 55,
+  "isVisible": true,
+  "key": "368hfm9xk1",
+  "leftColumn": 58,
   "minWidth": 50,
-  "mobileBottomRow": 26,
+  "mobileBottomRow": 4,
   "mobileLeftColumn": 58,
-  "mobileRightColumn": 62,
-  "mobileTopRow": 22,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 0,
   "needsErrorInfo": false,
   "onCanvasUI": {
     "disableParentSelection": false,
@@ -53,15 +42,11 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{resetWidget(\"FilePicker1Copy\", true);}}",
-  "originalBottomRow": 99,
-  "originalTopRow": 95,
-  "parentColumnSpace": 12.59375,
-  "parentId": "lre5o5g67c",
-  "parentRowSpace": 10,
+  "onClick": "{{closeModal(VerifyEmailModal.name);}}",
+  "parentId": "u3lemyweqt",
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
-  "rightColumn": 57,
+  "rightColumn": 64,
   "searchTags": [
     "click",
     "submit"
@@ -70,10 +55,9 @@
     "Buttons"
   ],
   "thumbnailSVG": "/static/media/thumbnail.b02b764a52db45d332efa723178a50a4.svg",
-  "topRow": 78,
-  "topRowBeforeCollapse": 95,
+  "topRow": 0,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "w1bi9q2i3g",
-  "widgetName": "IconButton6CopyCopy"
+  "widgetId": "dcym8qv3v5",
+  "widgetName": "IconButton9Copy"
 }

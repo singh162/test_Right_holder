@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 9,
+  "bottomRow": 36,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -12,15 +12,12 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "1.25rem",
+  "fontSize": "1rem",
   "fontStyle": "BOLD",
   "hideCard": false,
   "iconSVG": "/static/media/icon.301748e14b0306a7b94ece2d9e2c11cc.svg",
@@ -28,14 +25,14 @@
   "isLoading": false,
   "isVisible": true,
   "key": "pj9ak9hopa",
-  "leftColumn": 11,
+  "leftColumn": 10,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 11,
-  "mobileLeftColumn": 19,
-  "mobileRightColumn": 35,
-  "mobileTopRow": 7,
+  "mobileBottomRow": 36,
+  "mobileLeftColumn": 10,
+  "mobileRightColumn": 26,
+  "mobileTopRow": 32,
   "needsErrorInfo": false,
   "onCanvasUI": {
     "disableParentSelection": false,
@@ -44,15 +41,15 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 11,
-  "originalTopRow": 5,
+  "originalBottomRow": 36,
+  "originalTopRow": 32,
   "overflow": "NONE",
-  "parentColumnSpace": 6.939453125,
-  "parentId": "n93n5wka23",
+  "parentColumnSpace": 9.875,
+  "parentId": "u3lemyweqt",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 46,
+  "rightColumn": 57,
   "searchTags": [
     "typography",
     "paragraph",
@@ -63,14 +60,14 @@
     "Suggested",
     "Content"
   ],
-  "text": "{{ appsmith.store.signUpRightHolderEmail}}",
+  "text": "Can't find it? Check your spam folder or <a href=\"#\" style=\"color: #007bff;\" onclick=\"/*yourResendFunction*/\">resend</a>",
   "textAlign": "CENTER",
   "textColor": "#231F20",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
-  "topRow": 5,
+  "topRow": 32,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "vw6gmdgv51",
-  "widgetName": "Text24"
+  "widgetId": "2beoabdvty",
+  "widgetName": "Text25"
 }

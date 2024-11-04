@@ -37,7 +37,7 @@
   "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
-  "isVisible": "{{FilePicker2.files.length>0 ?\ntrue : false\n}}",
+  "isVisible": "{{FilePicker1.files.length>0 ?\ntrue : false\n}}",
   "key": "gmywrfy382",
   "leftColumn": 55,
   "minWidth": 50,

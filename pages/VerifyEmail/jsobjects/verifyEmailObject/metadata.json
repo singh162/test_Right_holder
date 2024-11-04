@@ -6,6 +6,11 @@
     "pageId": "VerifyEmail",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "variables": []
+    "variables": [
+      {
+        "name": "rightHolderData",
+        "value": "\"\""
+      }
+    ]
   }
 }

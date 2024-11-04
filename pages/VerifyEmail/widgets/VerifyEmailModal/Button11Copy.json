@@ -1,18 +1,21 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 40,
+  "bottomRow": 43,
   "boxShadow": "none",
-  "buttonColor": "#078467",
-  "buttonVariant": "PRIMARY",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonStyle": "PRIMARY",
+  "buttonVariant": "SECONDARY",
   "disabledWhenInvalid": false,
   "displayName": "Button",
   "dynamicBindingPathList": [
     {
+      "key": "buttonColor"
+    },
+    {
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -25,13 +28,13 @@
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "oskvmnqzhp",
-  "leftColumn": 42,
+  "key": "j5b5igmyjv",
+  "leftColumn": 45,
   "minWidth": 120,
-  "mobileBottomRow": 34,
-  "mobileLeftColumn": 38,
-  "mobileRightColumn": 54,
-  "mobileTopRow": 30,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 31,
+  "mobileRightColumn": 47,
+  "mobileTopRow": 18,
   "needsErrorInfo": false,
   "onCanvasUI": {
     "disableParentSelection": false,
@@ -40,18 +43,16 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{showModal(Modal1.name).then(() => {\n  resetWidget(\"Modal1\", true);\n});}}",
-  "originalBottomRow": 40,
-  "originalTopRow": 36,
-  "parentColumnSpace": 9.65267562866211,
-  "parentId": "qt42bl9w7i",
-  "parentRowSpace": 10,
+  "onClick": "{{closeModal(VerifyEmailModal.name);}}",
+  "originalBottomRow": 43,
+  "originalTopRow": 39,
+  "parentId": "u3lemyweqt",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 62,
+  "rightColumn": 61,
   "searchTags": [
     "click",
     "submit"
@@ -59,11 +60,11 @@
   "tags": [
     "Buttons"
   ],
-  "text": "Sign Up for SAIP",
+  "text": "Close",
   "thumbnailSVG": "/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
-  "topRow": 36,
+  "topRow": 39,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "zlma3rhejg",
-  "widgetName": "Button2"
+  "widgetId": "g7e5ln0wlr",
+  "widgetName": "Button11Copy"
 }
