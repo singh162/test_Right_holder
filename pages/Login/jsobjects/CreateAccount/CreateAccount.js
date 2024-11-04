@@ -94,7 +94,7 @@ export default {
 						await storeValue("signUpRightHolderEmail",Input4.text);
 						await storeValue("emailVerifyToken",verificationToken);
 						await closeModal(Modal1.name);
-						await showModal(Modal7.name);
+						// await showModal(Modal7.name);
 
 						// Send the verification email
 						// await verifyEmail.run(); // Call your email function
