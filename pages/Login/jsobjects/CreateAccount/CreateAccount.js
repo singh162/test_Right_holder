@@ -87,17 +87,17 @@ export default {
 				try {
 					const response = await Insert_User.run(userPayload);
 					if (response) {
-						// await Insert_Verification_Token.run(tokenPayload); // Add the token to the new table
+						await Insert_Verification_Token.run(tokenPayload); // Add the token to the new table
 						showAlert('User created successfully!', 'success'); // Show success message
 
 						await storeValue("signUpRightHolderName",Input3.text);
 						await storeValue("signUpRightHolderEmail",Input4.text);
 						await storeValue("emailVerifyToken",verificationToken);
 						await closeModal(Modal1.name);
-						// await showModal(Modal7.name);
+						await showModal(Modal7.name);
 
 						// Send the verification email
-						// await verifyEmail.run(); // Call your email function
+						await verifyEmail.run(); // Call your email function
 						await	resetWidget(Modal1.name);
 					}
 				} catch (err) {

@@ -32,7 +32,7 @@
       "leftColumn": 0,
       "maxDynamicHeight": 9000,
       "minDynamicHeight": 4,
-      "minHeight": 280,
+      "minHeight": 500,
       "minWidth": 450,
       "mobileBottomRow": 240,
       "mobileLeftColumn": 0,
@@ -111,5 +111,5 @@
   "version": 2,
   "widgetId": "fcjkfzc4nv",
   "widgetName": "VerifyEmailModal",
-  "width": 644
+  "width": 1156
 }

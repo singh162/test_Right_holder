@@ -1,4 +1,5 @@
 export default {
+	insertQuery:'',
 	generateUUID() {
 		return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
 			const r = Math.random() * 16 | 0,
@@ -58,6 +59,8 @@ export default {
 						updated_at: moment().format('YYYY-MM-DD HH:mm:ss')
 					}
 				);
+
+
 				showAlert("form sucessfully submitted","info");
 				resetWidget(Modal1.name);
 				storeValue("rightHolderInfoId",rightHolderInfoId);

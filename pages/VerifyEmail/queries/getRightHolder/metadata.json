@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM test_taoq_reach.rightHolder WHERE id = '{{this.params.id}}';",
+      "body": "SELECT username , email_verified FROM test_taoq_reach.rightHolder WHERE id = '{{this.params.id}}';",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

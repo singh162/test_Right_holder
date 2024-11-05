@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 36,
+  "bottomRow": 34,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -25,7 +25,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "pj9ak9hopa",
-  "leftColumn": 10,
+  "leftColumn": 14,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -41,15 +41,15 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 36,
-  "originalTopRow": 32,
+  "originalBottomRow": 34,
+  "originalTopRow": 29,
   "overflow": "NONE",
   "parentColumnSpace": 9.875,
   "parentId": "u3lemyweqt",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 57,
+  "rightColumn": 43,
   "searchTags": [
     "typography",
     "paragraph",
@@ -60,11 +60,11 @@
     "Suggested",
     "Content"
   ],
-  "text": "Can't find it? Check your spam folder or <a href=\"#\" style=\"color: #007bff;\" onclick=\"/*yourResendFunction*/\">resend</a>",
+  "text": "<p>Can't find it? Check your spam folder or click <strong>Resend Email</strong>.</p>\n",
   "textAlign": "CENTER",
   "textColor": "#231F20",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
-  "topRow": 32,
+  "topRow": 29,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

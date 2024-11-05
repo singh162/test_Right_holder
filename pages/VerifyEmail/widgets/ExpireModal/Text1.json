@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 18,
+  "bottomRow": 17,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -12,9 +12,6 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -28,7 +25,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "531ahhvo0l",
-  "leftColumn": 6,
+  "leftColumn": 12,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -44,15 +41,15 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 19,
-  "originalTopRow": 14,
+  "originalBottomRow": 18,
+  "originalTopRow": 13,
   "overflow": "NONE",
   "parentColumnSpace": 9.875,
   "parentId": "mrx0ih5q47",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 63,
+  "rightColumn": 54,
   "searchTags": [
     "typography",
     "paragraph",
@@ -63,11 +60,11 @@
     "Suggested",
     "Content"
   ],
-  "text": "Link is Expired, Please resend the email by click on resend link <a href=\"#\" style=\"color: #007bff;\" onclick=\"{{}}\">resend</a>",
+  "text": "<p>This verification link has expired. Please click <strong>Resend Email</strong> to receive a new link.</p>",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
-  "topRow": 14,
+  "topRow": 13,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

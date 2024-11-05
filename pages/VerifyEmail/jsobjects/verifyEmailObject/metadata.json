@@ -10,6 +10,10 @@
       {
         "name": "rightHolderData",
         "value": "\"\""
+      },
+      {
+        "name": "loginTimeout",
+        "value": "null"
       }
     ]
   }
