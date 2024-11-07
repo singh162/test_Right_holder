@@ -38,6 +38,7 @@ export default {
 			}
 		} else {
 			let data = await getRightHolder.run({ id: appsmith.store.rightHolderUserId });
+			console.log("dirext login",data)
 			if (data[0].email_verified) {
 				showModal(Modal1Copy.name);
 				this.loginTimeout = setTimeout(() => {
