@@ -46,12 +46,4 @@ export default {
 			}
 		}
 	},
-
-	// Call this function when the login button is clicked
-	cancelAutoNavigate() {
-		if (this.loginTimeout) {
-			clearTimeout(this.loginTimeout);
-		}
-		navigateTo('Login', {}, 'SAME_WINDOW');
-	}
 }
