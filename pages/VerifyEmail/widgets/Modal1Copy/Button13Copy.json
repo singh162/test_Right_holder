@@ -42,7 +42,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{navigateTo('Login', {}, 'SAME_WINDOW');}}",
+  "onClick": "{{verifyEmailObject.cancelAutoNavigate()}}",
   "originalBottomRow": 34,
   "originalTopRow": 30,
   "parentColumnSpace": 12.712890625,
