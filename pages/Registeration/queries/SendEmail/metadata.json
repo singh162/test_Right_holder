@@ -10,14 +10,14 @@
       "formData": {
         "command": "SEND",
         "send": {
-          "attachments": "[{{FilePicker2.files[0]}},{{FilePicker1.files[0]}}]",
+          "attachments": "[{{FilePicker2.files[0]}},{{FilePicker1.files[0]}},{{FilePicker1Copy.files[0]}}]",
           "bodyType": "text/html",
           "cc": "",
           "from": "saip@naxap.com",
           "isReplyTo": false,
           "replyTo": "saip@naxap.com",
           "subject": "Request for Verification of the Profile of {{HolderName.text}} Regarding the IP Violation Complaint",
-          "to": "puneet@bytescare.com"
+          "to": "jasmeet.singh@bytescare.com"
         }
       },
       "paginationType": "NONE",
