@@ -1,11 +1,11 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 161,
+  "bottomRow": 28,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
-  "disabledWhenInvalid": false,
+  "disabledWhenInvalid": true,
   "displayName": "Button",
   "dynamicBindingPathList": [
     {
@@ -15,12 +15,12 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
     }
   ],
+  "googleRecaptchaKey": "6Lck7ncqAAAAAEMI7fIJtGn0J1sLDg6cPAGLzX_p",
   "hideCard": false,
   "iconSVG": "/static/media/icon.7a418b9e1899a550d7e8f33b48cbde12.svg",
   "isDefaultClickDisabled": true,
@@ -28,13 +28,13 @@
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "4avm7ubjg9",
-  "leftColumn": 23,
+  "key": "1bobx0yv1v",
+  "leftColumn": 22,
   "minWidth": 120,
-  "mobileBottomRow": 148,
-  "mobileLeftColumn": 18,
-  "mobileRightColumn": 34,
-  "mobileTopRow": 144,
+  "mobileBottomRow": 28,
+  "mobileLeftColumn": 22,
+  "mobileRightColumn": 38,
+  "mobileTopRow": 24,
   "needsErrorInfo": false,
   "onCanvasUI": {
     "disableParentSelection": false,
@@ -43,18 +43,16 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{ValidateInfo.validate();}}",
-  "originalBottomRow": 151,
-  "originalTopRow": 147,
-  "parentColumnSpace": 16.052734375,
-  "parentId": "lre5o5g67c",
+  "onClick": "{{JSObject1.Button1onClick();}}",
+  "parentColumnSpace": 17.828125,
+  "parentId": "0",
   "parentRowSpace": 10,
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
-  "resetFormOnClick": false,
+  "resetFormOnClick": true,
   "responsiveBehavior": "hug",
-  "rightColumn": 35,
+  "rightColumn": 38,
   "searchTags": [
     "click",
     "submit"
@@ -64,9 +62,9 @@
   ],
   "text": "Submit",
   "thumbnailSVG": "/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
-  "topRow": 157,
+  "topRow": 24,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "p1ee0qly6i",
+  "widgetId": "4dqh417uf4",
   "widgetName": "Button1"
 }
