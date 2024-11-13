@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66fbe909af2b8e5a2a63f83d_7f5c9607-59d3-4cb4-9ad5-e7e9ba0ab585",
+  "id": "Login_VerifyRecaptha",
+  "unpublishedCollection": {
+    "name": "VerifyRecaptha",
+    "pageId": "Login",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

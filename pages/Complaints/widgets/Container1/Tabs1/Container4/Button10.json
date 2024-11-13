@@ -28,7 +28,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "h7cepe41od",
-  "leftColumn": 50,
+  "leftColumn": 49,
   "minWidth": 120,
   "mobileBottomRow": 12,
   "mobileLeftColumn": 39,
@@ -51,7 +51,7 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 57,
+  "rightColumn": 56,
   "searchTags": [
     "click",
     "submit"

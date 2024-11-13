@@ -39,7 +39,7 @@
   "labelAlignment": "left",
   "labelPosition": "Left",
   "labelStyle": "BOLD",
-  "labelText": "Title",
+  "labelText": "Title *",
   "labelTextColor": "{{appsmith.theme.colors.primaryColor}}",
   "labelTextSize": "1rem",
   "labelWidth": "15",

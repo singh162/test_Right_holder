@@ -19,6 +19,7 @@
       "key": "onClick"
     }
   ],
+  "googleRecaptchaKey": "",
   "hideCard": false,
   "iconSVG": "/static/media/icon.7a418b9e1899a550d7e8f33b48cbde12.svg",
   "isDefaultClickDisabled": true,

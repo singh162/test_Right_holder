@@ -93,7 +93,6 @@ Would you like to view your profile?
 						showModal(Modal7Copy.name)
 					}
 				}
-
 				else
 				{
 					showAlert("invalid username or email Address and password","error");
