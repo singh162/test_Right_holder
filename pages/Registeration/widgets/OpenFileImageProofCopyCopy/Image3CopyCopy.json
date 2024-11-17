@@ -14,8 +14,8 @@
     }
   ],
   "dynamicTriggerPathList": [],
-  "enableDownload": false,
-  "enableRotation": false,
+  "enableDownload": true,
+  "enableRotation": true,
   "flexVerticalAlignment": "start",
   "hideCard": false,
   "iconSVG": "/static/media/icon.fdb987a7ceacf7001426460138f7cd09.svg",

@@ -29,6 +29,7 @@ body {
 Best regards,<br>
 <br>
 {{appsmith.store.signUpRightHolderName}}<br>
+{{appsmith.store.signUpRightHolderEmail}}<br>
 {{appsmith.store.rightHolderInfoPhoneNumber}}<br>
 {{appsmith.store.rightHolderInfoCompanyName}}
 </div>
