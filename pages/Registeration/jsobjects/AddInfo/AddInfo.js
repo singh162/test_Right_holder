@@ -60,7 +60,6 @@ export default {
 					}
 				);
 
-
 				showAlert("form sucessfully submitted","info");
 				resetWidget(Modal1.name);
 				storeValue("rightHolderInfoId",rightHolderInfoId);

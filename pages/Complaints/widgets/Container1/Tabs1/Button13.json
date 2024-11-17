@@ -1,18 +1,20 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 112,
+  "bottomRow": 69,
   "boxShadow": "none",
-  "buttonColor": "#034059",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "displayName": "Button",
   "dynamicBindingPathList": [
     {
+      "key": "buttonColor"
+    },
+    {
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -25,13 +27,13 @@
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "ushiu45rvm",
-  "leftColumn": 25,
+  "key": "3sytualsva",
+  "leftColumn": 43,
   "minWidth": 120,
-  "mobileBottomRow": 181,
-  "mobileLeftColumn": 21,
-  "mobileRightColumn": 37,
-  "mobileTopRow": 177,
+  "mobileBottomRow": 56,
+  "mobileLeftColumn": 43,
+  "mobileRightColumn": 59,
+  "mobileTopRow": 52,
   "needsErrorInfo": false,
   "onCanvasUI": {
     "disableParentSelection": false,
@@ -40,18 +42,16 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{ValidateComplainits.validateComplaints();}}",
-  "originalBottomRow": 112,
-  "originalTopRow": 108,
-  "parentColumnSpace": 12.15625,
-  "parentId": "e4lzsh4ai0",
+  "onClick": "{{sendCustomerEmail.sendEMail();}}",
+  "parentColumnSpace": 15.851066589355469,
+  "parentId": "yfcgm6bk7o",
   "parentRowSpace": 10,
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
-  "resetFormOnClick": true,
+  "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 34,
+  "rightColumn": 59,
   "searchTags": [
     "click",
     "submit"
@@ -59,11 +59,12 @@
   "tags": [
     "Buttons"
   ],
-  "text": "Submit",
+  "text": "Send Support Request",
   "thumbnailSVG": "/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
-  "topRow": 108,
+  "tooltip": "",
+  "topRow": 65,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "kk46gue8pp",
-  "widgetName": "Button2"
+  "widgetId": "x9wxevp085",
+  "widgetName": "Button13"
 }

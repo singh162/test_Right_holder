@@ -1,8 +1,10 @@
 {
-  "allowedFileTypes": [],
+  "allowedFileTypes": [
+    "*"
+  ],
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 13,
+  "bottomRow": 56,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "displayName": "FilePicker",
@@ -14,17 +16,7 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "onFilesSelected"
-    }
-  ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onFilesSelected"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "dynamicTyping": true,
   "fileDataType": "Base64",
   "files": [],
@@ -36,16 +28,16 @@
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "wn25q9m2em",
-  "label": "Select Files",
-  "leftColumn": 21,
-  "maxFileSize": 5,
-  "maxNumFiles": 1,
+  "key": "hbsnpgohq5",
+  "label": "File Upload",
+  "leftColumn": 23,
+  "maxFileSize": "5",
+  "maxNumFiles": "10",
   "minWidth": 120,
-  "mobileBottomRow": 14,
-  "mobileLeftColumn": 9,
-  "mobileRightColumn": 25,
-  "mobileTopRow": 10,
+  "mobileBottomRow": 56,
+  "mobileLeftColumn": 7,
+  "mobileRightColumn": 23,
+  "mobileTopRow": 52,
   "needsErrorInfo": false,
   "onCanvasUI": {
     "disableParentSelection": false,
@@ -54,13 +46,12 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onFilesSelected": "{{ListTitles.handleInputChange(currentItem.id, 'FilePicker2', FilePicker2.files ? FilePicker2.files.length > 0 ? FilePicker2.files : '' : '');}}",
-  "parentColumnSpace": 7.882606208324432,
-  "parentId": "nv46gc1lzz",
+  "parentColumnSpace": 19.12603759765625,
+  "parentId": "yfcgm6bk7o",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
-  "rightColumn": 44,
+  "rightColumn": 39,
   "searchTags": [
     "upload"
   ],
@@ -69,9 +60,9 @@
     "Inputs"
   ],
   "thumbnailSVG": "/static/media/thumbnail.164363adea04c44e54b1fd47657a579e.svg",
-  "topRow": 9,
+  "topRow": 52,
   "type": "FILE_PICKER_WIDGET_V2",
   "version": 1,
-  "widgetId": "0bmoc1ten6",
-  "widgetName": "FilePicker2"
+  "widgetId": "34l1t0goaq",
+  "widgetName": "FilePicker3"
 }
