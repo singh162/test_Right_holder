@@ -40,7 +40,7 @@
   "label": "Select Files",
   "leftColumn": 16,
   "maxFileSize": 5,
-  "maxNumFiles": "3",
+  "maxNumFiles": "5",
   "minWidth": 120,
   "mobileBottomRow": 8,
   "mobileLeftColumn": 45,

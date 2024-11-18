@@ -1,8 +1,8 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 106,
-  "bottomRowBeforeCollapse": 98,
+  "bottomRow": 105,
+  "bottomRowBeforeCollapse": 106,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "TERTIARY",
@@ -39,7 +39,7 @@
   "isLoading": false,
   "isVisible": "{{FilePicker1.files.length>0 ?\ntrue : false\n}}",
   "key": "gmywrfy382",
-  "leftColumn": 55,
+  "leftColumn": 54,
   "minWidth": 50,
   "mobileBottomRow": 26,
   "mobileLeftColumn": 58,
@@ -61,7 +61,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
-  "rightColumn": 57,
+  "rightColumn": 56,
   "searchTags": [
     "click",
     "submit"
@@ -70,8 +70,8 @@
     "Buttons"
   ],
   "thumbnailSVG": "/static/media/thumbnail.b02b764a52db45d332efa723178a50a4.svg",
-  "topRow": 102,
-  "topRowBeforeCollapse": 94,
+  "topRow": 101,
+  "topRowBeforeCollapse": 102,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
   "widgetId": "s9zopg6s81",

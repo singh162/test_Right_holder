@@ -1,16 +1,16 @@
 {
-  "accentColor": "#034059",
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
-  "backgroundColor": "#FFFFFF",
-  "borderColor": "#E0DEDE",
+  "backgroundColor": "#ffffff",
+  "borderColor": "#e0dede",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": 1,
-  "bottomRow": 77,
+  "bottomRow": 72,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 660,
+      "bottomRow": 610,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -121,7 +121,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 660,
+      "bottomRow": 610,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -238,9 +238,13 @@
     },
     {
       "key": "boxShadow"
+    },
+    {
+      "key": "accentColor"
     }
   ],
-  "dynamicHeight": "AUTO_HEIGHT_WITH_LIMITS",
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onTabSelected"
@@ -255,8 +259,8 @@
   "isVisible": true,
   "key": "cv1hn3sp9i",
   "leftColumn": 1,
-  "maxDynamicHeight": 105,
-  "minDynamicHeight": 70,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 10,
   "minWidth": 450,
   "mobileBottomRow": 30,
   "mobileLeftColumn": 10,
@@ -271,7 +275,7 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onTabSelected": "{{GetViewComplaintStatus.run();\ncountViewComplaintStatus.run();\ngetAllTitlesByRightHolder.run()}}",
-  "originalBottomRow": 82,
+  "originalBottomRow": 131,
   "originalTopRow": 7,
   "parentColumnSpace": 17.828125,
   "parentId": "3ybwtybvv6",
@@ -311,7 +315,7 @@
       "id": "tabel4pclirgd",
       "index": 2,
       "isVisible": true,
-      "label": "Add  Multiple Titles",
+      "label": "Manage Titles",
       "widgetId": "w5rt4mulg3"
     }
   },
