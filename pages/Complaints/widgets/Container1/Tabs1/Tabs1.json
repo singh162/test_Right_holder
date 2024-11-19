@@ -5,12 +5,12 @@
   "borderColor": "#e0dede",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": 1,
-  "bottomRow": 62,
+  "bottomRow": 84,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 500,
+      "bottomRow": 690,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -66,7 +66,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1120,
+      "bottomRow": 1180,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -121,7 +121,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 500,
+      "bottomRow": 690,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -275,8 +275,8 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onTabSelected": "{{GetViewComplaintStatus.run();\ncountViewComplaintStatus.run();\ngetAllTitlesByRightHolder.run()}}",
-  "originalBottomRow": 69,
-  "originalTopRow": 8,
+  "originalBottomRow": 135,
+  "originalTopRow": 11,
   "parentColumnSpace": 17.828125,
   "parentId": "3ybwtybvv6",
   "parentRowSpace": 10,
@@ -323,7 +323,7 @@
     "Layout"
   ],
   "thumbnailSVG": "/static/media/thumbnail.902d280515fd575657e8ccf99545112b.svg",
-  "topRow": 8,
+  "topRow": 11,
   "type": "TABS_WIDGET",
   "version": 3,
   "widgetId": "u20edhn4fl",
