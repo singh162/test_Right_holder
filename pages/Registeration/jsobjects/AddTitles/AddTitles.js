@@ -33,7 +33,7 @@ export default {
 				console.log("titleItem",titleItem);
 
 				// Extract and decode the Base64 data portion from ownershipImage.data
-				const base64Data = titleItem.FilePicker2[0][0].data.split(',')[1];
+				const base64Data = titleItem.FilePicker2Copy[0][0].data.split(',')[1];
 				if (!base64Data) {
 					showAlert("Invalid image data format for title: " + titleItem.titleName, "error");
 					continue; // Skip to the next title
@@ -49,7 +49,7 @@ export default {
 				});
 			}
 			ListTitles.titleList= [
-				{ id: 1, titleName: "", FilePicker2: [] } // Start with one empty title entry
+				{ id: 1, titleName: "", FilePicker2Copy: [] } // Start with one empty title entry
 			];
 		} catch (error) {
 			console.error("Error during addTitles:", error);
