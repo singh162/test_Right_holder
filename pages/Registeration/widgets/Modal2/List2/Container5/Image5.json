@@ -39,7 +39,7 @@
   "imageShape": "RECTANGLE",
   "isDeprecated": false,
   "isLoading": false,
-  "isVisible": "{{FilePicker2Copy.files.length >0 ? true: false}}",
+  "isVisible": "{{FilePicker2Copy.files.length >0? true: false}}",
   "key": "6mcuye5bs8",
   "leftColumn": 50,
   "maxZoomLevel": 1,
