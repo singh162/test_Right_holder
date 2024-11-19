@@ -51,9 +51,17 @@ export default {
 			ListTitles.titleList= [
 				{ id: 1, titleName: "", FilePicker2Copy: [] } // Start with one empty title entry
 			];
+			showAlert("Complaint title(s) added successfully!", "success");
+			this.resetWidgets();
+			closeModal(Modal2Copy.name);
+
 		} catch (error) {
 			console.error("Error during addTitles:", error);
 			showAlert("Failed to add complaint title: " + error.message, "error");
 		}
+	},
+	resetWidgets() {
+		resetWidget("input14", true);
+		resetWidget("List2", true);
 	},
 };
