@@ -41,7 +41,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{showModal(Modal8.name);}}",
+  "onClick": "{{viewTitlesObject.viewTitle();}}",
   "parentColumnSpace": 16.052734375,
   "parentId": "lre5o5g67c",
   "parentRowSpace": 10,
