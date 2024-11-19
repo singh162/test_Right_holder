@@ -148,7 +148,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "rwlii228mw",
-  "leftColumn": 9,
+  "leftColumn": 2,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 15,
   "minWidth": 450,
@@ -172,7 +172,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 56,
+  "rightColumn": 63,
   "shouldScrollContents": true,
   "shouldShowTabs": true,
   "tabsObj": {
