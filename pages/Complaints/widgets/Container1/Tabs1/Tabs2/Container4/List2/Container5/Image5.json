@@ -36,7 +36,7 @@
   "imageShape": "RECTANGLE",
   "isDeprecated": false,
   "isLoading": false,
-  "isVisible": "{{titleOwerShipCertificate.files.length >0}}",
+  "isVisible": "{{titleOwerShipCertificate.files.length >0 ? true : false}}",
   "key": "6mcuye5bs8",
   "leftColumn": 50,
   "maxZoomLevel": 1,
