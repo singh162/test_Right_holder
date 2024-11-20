@@ -22,6 +22,9 @@
   "dynamicPropertyPathList": [
     {
       "key": "onFilesSelected"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -39,7 +42,7 @@
   "isDisabled": false,
   "isLoading": false,
   "isRequired": true,
-  "isVisible": true,
+  "isVisible": "true",
   "key": "wn25q9m2em",
   "label": "Select Files",
   "leftColumn": 21,

@@ -11,10 +11,17 @@
     },
     {
       "key": "image"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -29,7 +36,7 @@
   "imageShape": "RECTANGLE",
   "isDeprecated": false,
   "isLoading": false,
-  "isVisible": true,
+  "isVisible": "{{titleOwerShipCertificate.files.length>0 ? true : false }}",
   "key": "6mcuye5bs8",
   "leftColumn": 50,
   "maxZoomLevel": 1,
