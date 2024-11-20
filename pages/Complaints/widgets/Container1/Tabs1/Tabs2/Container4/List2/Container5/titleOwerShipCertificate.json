@@ -60,7 +60,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onFilesSelected": "",
+  "onFilesSelected": "{{ListTitles.handleInputChange(currentItem.id, 'FilePicker2', titleOwerShipCertificate.files ? titleOwerShipCertificate.files.length > 0 ? titleOwerShipCertificate.files : '' : '');}}\n",
   "parentColumnSpace": 7.882606208324432,
   "parentId": "gbwe680llm",
   "parentRowSpace": 10,
