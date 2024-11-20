@@ -10,6 +10,9 @@
       "key": "borderRadius"
     },
     {
+      "key": "isVisible"
+    },
+    {
       "key": "image"
     }
   ],
@@ -29,11 +32,11 @@
   "flexVerticalAlignment": "start",
   "hideCard": false,
   "iconSVG": "/static/media/icon.fdb987a7ceacf7001426460138f7cd09.svg",
-  "image": "{{titleOwerShipCertificate.files.length >0 ?titleOwerShipCertificate.files[0].data : ''}}",
+  "image": "{{titleOwerShipCertificate.files.length > 0 ? titleOwerShipCertificate.files[0].data: 'https://assets.appsmith.com/widgets/default.png'}}",
   "imageShape": "RECTANGLE",
   "isDeprecated": false,
   "isLoading": false,
-  "isVisible": "true",
+  "isVisible": "{{titleOwerShipCertificate.files.length >0}}",
   "key": "6mcuye5bs8",
   "leftColumn": 50,
   "maxZoomLevel": 1,
