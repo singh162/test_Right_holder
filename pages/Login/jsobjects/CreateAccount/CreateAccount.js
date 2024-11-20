@@ -55,9 +55,7 @@ export default {
 
 		const passwordHash = CryptoJS.SHA256(Input5.text).toString(); // Hash the password
 		if(this.validateData()){
-			let repacta = await VerifyRecaptha.verifyRepactha();
-			console.log("repacta",repacta);
-			console.log("repacta",repacta);
+			await Verify_Recaptha.run();
 			const verificationToken = this.generateUUID(); 
 			// Prepare the payload for the insert operation
 			this.exitQuery = `SELECT id FROM test_taoq_reach.rightHolder WHERE email = '${Input4.text}' or username ='${Input3.text}'`;
@@ -112,6 +110,6 @@ export default {
 				await closeModal(Modal1.name);
 				await resetWidget(Modal1.name);
 			}
+		}
 	}
-}
 }

@@ -19,7 +19,7 @@
       "key": "onClick"
     }
   ],
-  "googleRecaptchaKey": "",
+  "googleRecaptchaKey": "6Lck7ncqAAAAAEMI7fIJtGn0J1sLDg6cPAGLzX_p",
   "hideCard": false,
   "iconSVG": "/static/media/icon.7a418b9e1899a550d7e8f33b48cbde12.svg",
   "isDefaultClickDisabled": true,
@@ -47,7 +47,7 @@
   "originalTopRow": 42,
   "parentId": "evx3s0cymc",
   "placement": "CENTER",
-  "recaptchaType": "V3",
+  "recaptchaType": "V2",
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
