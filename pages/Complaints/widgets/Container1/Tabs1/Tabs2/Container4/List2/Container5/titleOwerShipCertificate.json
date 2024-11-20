@@ -1,8 +1,7 @@
 {
   "allowedFileTypes": [
     "image/jpeg",
-    ".png",
-    "image/*"
+    ".png"
   ],
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -61,7 +60,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onFilesSelected": "{{ListTitles.handleInputChange(currentItem.id, 'FilePicker2', titleOwerShipCertificate.files ? titleOwerShipCertificate.files.length > 0 ? titleOwerShipCertificate.files : '' : '');}}",
+  "onFilesSelected": "",
   "parentColumnSpace": 7.882606208324432,
   "parentId": "gbwe680llm",
   "parentRowSpace": 10,
