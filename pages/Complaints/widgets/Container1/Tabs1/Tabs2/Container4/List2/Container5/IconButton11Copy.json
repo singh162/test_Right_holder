@@ -34,7 +34,7 @@
   "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
-  "isVisible": "{{titleOwerShipCertificate.files.length >0}}",
+  "isVisible": "{{FilePicker2.files.length >0}}",
   "key": "rqkapcoiju",
   "leftColumn": 62,
   "minWidth": 50,

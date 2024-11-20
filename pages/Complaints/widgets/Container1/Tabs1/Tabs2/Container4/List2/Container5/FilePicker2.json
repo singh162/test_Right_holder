@@ -21,9 +21,6 @@
   "dynamicPropertyPathList": [
     {
       "key": "onFilesSelected"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -41,7 +38,7 @@
   "isDisabled": false,
   "isLoading": false,
   "isRequired": true,
-  "isVisible": "true",
+  "isVisible": true,
   "key": "wn25q9m2em",
   "label": "Select Files",
   "leftColumn": 21,
@@ -60,7 +57,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onFilesSelected": "{{ListTitles.handleInputChange(currentItem.id, 'FilePicker2', titleOwerShipCertificate.files ? titleOwerShipCertificate.files.length > 0 ? titleOwerShipCertificate.files : '' : '');}}\n",
+  "onFilesSelected": "{{ListTitles.handleInputChange(currentItem.id, 'FilePicker2', FilePicker2.files ? FilePicker2.files.length > 0 ? FilePicker2.files : '' : '');}}\n",
   "parentColumnSpace": 7.882606208324432,
   "parentId": "gbwe680llm",
   "parentRowSpace": 10,
@@ -79,5 +76,5 @@
   "type": "FILE_PICKER_WIDGET_V2",
   "version": 1,
   "widgetId": "dquxc1nikl",
-  "widgetName": "titleOwerShipCertificate"
+  "widgetName": "FilePicker2"
 }
