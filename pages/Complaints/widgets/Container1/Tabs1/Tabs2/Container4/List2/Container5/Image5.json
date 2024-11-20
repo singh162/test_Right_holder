@@ -3,7 +3,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 21,
   "boxShadow": "none",
-  "defaultImage": "https://gratisography.com/photo/fast-feather/",
+  "defaultImage": "https://assets.appsmith.com/widgets/default.png",
   "displayName": "Image",
   "dynamicBindingPathList": [
     {
@@ -32,7 +32,7 @@
   "flexVerticalAlignment": "start",
   "hideCard": false,
   "iconSVG": "/static/media/icon.fdb987a7ceacf7001426460138f7cd09.svg",
-  "image": "{{titleOwerShipCertificate.files.length > 0 ? titleOwerShipCertificate.files[0].data: 'https://gratisography.com/wp-content/uploads/2024/10/gratisography-foliage-face-1036x780.jpg'}}",
+  "image": "{{titleOwerShipCertificate.files.length > 0 ? 'https://assets.appsmith.com/widgets/default.png' : titleOwerShipCertificate.files[0].data}}",
   "imageShape": "RECTANGLE",
   "isDeprecated": false,
   "isLoading": false,
