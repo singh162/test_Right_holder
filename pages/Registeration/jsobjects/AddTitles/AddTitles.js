@@ -52,7 +52,7 @@ export default {
 				{ id: 1, titleName: "", FilePicker2Copy: [] } // Start with one empty title entry
 			];
 			showAlert("Complaint title(s) added successfully!", "success");
-			await this.resetWidgets();
+			// await this.resetWidgets();
 			closeModal(Modal2Copy.name);
 
 		} catch (error) {

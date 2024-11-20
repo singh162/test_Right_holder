@@ -42,7 +42,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{closeModal(Modal2.name);}}",
+  "onClick": "{{closeModal(Modal2.name).then(() => {\n  resetWidget(\"List2\", true);\n});}}",
   "parentId": "wlrwpuemx9",
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
