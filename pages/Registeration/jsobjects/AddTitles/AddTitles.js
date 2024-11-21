@@ -48,20 +48,23 @@ export default {
 					updated_at: moment().format('YYYY-MM-DD HH:mm:ss')
 				});
 			}
-			ListTitles.titleList= [
-				{ id: 1, titleName: "", FilePicker2Copy: [] } // Start with one empty title entry
-			];
+			ListTitles.titleList = [{
+				id:1,
+				titleName:"",
+				FilePicker2Copy: []
+			}]
 			showAlert("Complaint title(s) added successfully!", "success");
-			// await this.resetWidgets();
-			closeModal(Modal2Copy.name);
+			closeModal(Modal2Copy.name).then(() => {
+				resetWidget("List2", true);
+			});
 
 		} catch (error) {
 			console.error("Error during addTitles:", error);
 			showAlert("Failed to add complaint title: " + error.message, "error");
 		}
 	},
-	async resetWidgets() {
-		resetWidget("input14", true);
+	resetWidgets() {
+		resetWidget("Input14", true);
 		resetWidget("List2", true);
 	},
 };
