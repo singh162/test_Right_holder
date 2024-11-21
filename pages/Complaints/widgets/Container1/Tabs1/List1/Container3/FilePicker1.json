@@ -18,7 +18,11 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onFilesSelected"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onFilesSelected"
@@ -53,7 +57,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onFilesSelected": "",
+  "onFilesSelected": "{{AddListInput.handleInputChange(currentItem.id, 'FilePicker1', FilePicker1.files);}}",
   "parentColumnSpace": 9.581333875656128,
   "parentId": "ch1pyepglo",
   "parentRowSpace": 10,

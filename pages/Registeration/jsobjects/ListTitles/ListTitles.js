@@ -3,6 +3,11 @@ export default {
 	titleList: [
 		{ id: 1, titleName: "", FilePicker2Copy: [] } // Start with one empty title entry
 	],
+	isTitleImageView:[
+		{
+			isVisible:false
+		}
+	],
 
 	// Function to add a new title entry
 	addTitle: () => {
@@ -21,7 +26,8 @@ export default {
 	removeFileListOnCrossClick: (id) => {
 		const index = this.titleList.findIndex(item => item.id === id);
 		if (index !== -1) {
-			List2.listData[List2.pageNo-1].FilePicker2Copy = [];
+			List2.listData[index].FilePicker2Copy = [];
+			this.isTitleImageView[index].isVisible = false;
 			this.titleList[index].FilePicker2Copy = []; // Reset the file array
 			resetWidget("FilePicker2Copy", true); // Reset the FilePicker widget
 		}
@@ -30,9 +36,15 @@ export default {
 	// Function to handle input changes for title name and file selection
 	handleInputChange: (id, field, value) => {
 		const entry = this.titleList.find(item => item.id === id);
+		const index = this.titleList.findIndex(item => item.id === id);
+
 		if (entry) {
 			if (field === "FilePicker2Copy") {
 				if (entry.FilePicker2Copy.length < 3) {
+					this.isTitleImageView.push({
+						isVisible:false
+					})
+					this.isTitleImageView[index].isVisible = true;
 					entry.FilePicker2Copy.push(value); // Add new file if under limit
 				} else {
 					console.warn("Cannot add more than 3 files."); // Limit check

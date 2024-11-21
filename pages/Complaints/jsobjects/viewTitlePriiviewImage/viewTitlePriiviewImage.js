@@ -3,6 +3,6 @@ export default {
 	prviewImage (id) {
 		//	write code here
 		this.index=id;
-		showModal(Modal7)
+		showModal(Modal7.name)
 	}
 }
