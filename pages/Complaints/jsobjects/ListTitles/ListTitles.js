@@ -27,7 +27,7 @@ export default {
 	removeFileListOnCrossClick: (id) => {
 		const index = this.titleList.findIndex(item => item.id === id);
 		if (index !== -1) {
-			List2.listData[List1.pageNo-1].FilePicker2 = [];
+			List2.listData[index].FilePicker2 = [];
 			this.isTitleImageView[index].isVisible = false;
 			this.titleList[index].FilePicker2 = []; // Reset the file array
 			resetWidget("FilePicker2", true); // Reset the FilePicker widget
