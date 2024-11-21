@@ -34,7 +34,7 @@
   "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
-  "isVisible": "{{AddListInput.listArray[currentIndex].FilePicker1.length>0}}",
+  "isVisible": "{{FilePicker1.files.length>0}}",
   "key": "dc0kpcjlv9",
   "leftColumn": 38,
   "minWidth": 50,

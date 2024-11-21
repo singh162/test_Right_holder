@@ -57,7 +57,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onFilesSelected": "{{AddListInput.handleInputChange(currentItem.id, 'FilePicker1', FilePicker1.files ? FilePicker1.files.length > 0 ? FilePicker1.files : '' : '');}}",
+  "onFilesSelected": "{{AddListInput.handleInputChange(currentItem.id, 'FilePicker1', FilePicker1.files);}}",
   "parentColumnSpace": 9.581333875656128,
   "parentId": "ch1pyepglo",
   "parentRowSpace": 10,
