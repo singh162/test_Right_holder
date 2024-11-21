@@ -32,7 +32,7 @@
   "flexVerticalAlignment": "start",
   "hideCard": false,
   "iconSVG": "/static/media/icon.fdb987a7ceacf7001426460138f7cd09.svg",
-  "image": "{{ListTitles.isTitleImageView[currentItem.id-1].isVisible > 0 ? FilePicker2.files[0].data : 'https://assets.appsmith.com/widgets/default.png'}}",
+  "image": "{{ListTitles.isTitleImageView[currentItem.id-1].isVisible > 0 ? ListTitles.titleList[currentItem.id-1].FilePicker2[0][0].data : 'https://assets.appsmith.com/widgets/default.png'}}",
   "imageShape": "RECTANGLE",
   "isDeprecated": false,
   "isLoading": false,
@@ -53,7 +53,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{showModal(Modal7.name);}}",
+  "onClick": "{{viewTitlePriiviewImage.prviewImage(currentItem.id);}}",
   "parentColumnSpace": 7.882606208324432,
   "parentId": "gbwe680llm",
   "parentRowSpace": 10,
