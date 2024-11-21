@@ -4,6 +4,12 @@ export default {
 		{ id: 1, titleName: "", FilePicker2: [] } // Start with one empty title entry
 	],
 
+	isTitleImageView:[
+		{
+			isVisible:false
+		}
+	],
+
 	// Function to add a new title entry
 	addTitle: () => {
 		const newId = ++this.index; // Increment index and generate new ID
@@ -22,6 +28,7 @@ export default {
 		const index = this.titleList.findIndex(item => item.id === id);
 		if (index !== -1) {
 			List2.listData[List1.pageNo-1].FilePicker2 = [];
+			this.isTitleImageView[index].isVisible = false;
 			this.titleList[index].FilePicker2 = []; // Reset the file array
 			resetWidget("FilePicker2", true); // Reset the FilePicker widget
 		}
@@ -30,9 +37,15 @@ export default {
 	// Function to handle input changes for title name and file selection
 	handleInputChange: (id, field, value) => {
 		const entry = this.titleList.find(item => item.id === id);
+		const index = this.titleList.findIndex(item => item.id === id);
+
 		if (entry) {
 			if (field === "FilePicker2") {
 				if (entry.FilePicker2.length < 3) {
+					this.isTitleImageView.push({
+						isVisible:false
+					})
+					this.isTitleImageView[index].isVisible = true;
 					entry.FilePicker2.push(value); // Add new file if under limit
 				} else {
 					console.warn("Cannot add more than 3 files."); // Limit check

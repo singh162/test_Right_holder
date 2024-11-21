@@ -4,7 +4,6 @@ export default {
 	listArray: [{ id: this.index, input1: '', Description: '', FilePicker1: [] }],
 	lsitPageNo:1,
 
-	imageView: false,
 
 	// Function to add new input fields dynamically
 	Button5onClick() {
@@ -52,29 +51,36 @@ export default {
 	},
 	// Function to handle input changes
 	handleInputChange(id, field, value) {
-		// Update the specific field of the relevant input row
-		console.log(field,"field",value)
+		console.log(field, "field", value);
 		if (field === "FilePicker1") {
 			const index = this.listArray.findIndex(item => item.id === id);
 			if (index !== -1) {
-				if (this.listArray[index].FilePicker1.length < 3) {
-					this.listArray[index].FilePicker1.push(value); // Add new file
+				if (FilePicker1.files.length === 0) {
+					// Handle the cancel action
+					console.log("File selection canceled");
+					this.listArray[index].FilePicker1 = []; // Clear the file array
 				} else {
-					console.warn("Cannot add more than 3 files."); // Warning when trying to add more than 3
+					const currentFiles = this.listArray[index].FilePicker1 || [];
+					const newFiles = value.filter(
+						file => !currentFiles.some(existingFile => existingFile.name === file.name)
+					);
+
+					if (currentFiles.length + newFiles.length <= 3) {
+						this.listArray[index].FilePicker1 = [...currentFiles, ...newFiles];
+					} else {
+						console.warn("Cannot add more than 3 files.");
+					}
 				}
 			}
-			this.imageView = true;
-		}
-		else{
-			this.listArray = this.listArray.map(item => 
+		} else {
+			this.listArray = this.listArray.map(item =>
 																					item.id === id ? { ...item, [field]: value } : item
 																				 );
 		}
 
-		// Log the changes for debugging
 		console.log("Updated Input Fields: ", this.listArray);
+		List1.listData.push([...this.listArray]);
+	}
 
-		// Update the List1 widget data
-		List1.listData.push(this.listArray);
-	},
+
 }

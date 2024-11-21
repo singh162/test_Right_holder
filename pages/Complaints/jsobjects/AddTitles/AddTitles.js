@@ -68,7 +68,7 @@ export default {
 					updated_at: moment().format('YYYY-MM-DD HH:mm:ss')
 				});
 			}
-
+			ListTitles.isTitleImageView=[];
 			showAlert("Complaint title(s) added successfully!", "success");
 
 			ListTitles.titleList= [
