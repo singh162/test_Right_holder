@@ -4,6 +4,8 @@ export default {
 	listArray: [{ id: this.index, input1: '', Description: '', FilePicker1: [] }],
 	lsitPageNo:1,
 
+	imageView: false,
+
 	// Function to add new input fields dynamically
 	Button5onClick() {
 		// Generate a unique ID for each new entry
@@ -61,6 +63,7 @@ export default {
 					console.warn("Cannot add more than 3 files."); // Warning when trying to add more than 3
 				}
 			}
+			this.imageView = true;
 		}
 		else{
 			this.listArray = this.listArray.map(item => 

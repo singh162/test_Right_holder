@@ -18,6 +18,10 @@
       {
         "name": "lsitPageNo",
         "value": "1"
+      },
+      {
+        "name": "imageView",
+        "value": "false"
       }
     ]
   }
