@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 34,
+  "bottomRow": 35,
   "boxShadow": "none",
   "defaultText": "",
   "displayName": "Input",
@@ -83,7 +83,7 @@
     "Inputs"
   ],
   "thumbnailSVG": "/static/media/thumbnail.a4eac1a16753ea7fc54cac7731f9ea6a.svg",
-  "topRow": 18,
+  "topRow": 19,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "n6j2o5vpeh",

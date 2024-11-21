@@ -32,7 +32,7 @@
   "flexVerticalAlignment": "start",
   "hideCard": false,
   "iconSVG": "/static/media/icon.fdb987a7ceacf7001426460138f7cd09.svg",
-  "image": "{{FilePicker2.files.length > 0 ? FilePicker2.files[0].data : 'https://assets.appsmith.com/widgets/default.png'}}",
+  "image": "{{ListTitles.isTitleImageView[currentItem.id-1].isVisible > 0 ? FilePicker2.files[0].data : 'https://assets.appsmith.com/widgets/default.png'}}",
   "imageShape": "RECTANGLE",
   "isDeprecated": false,
   "isLoading": false,
