@@ -28,7 +28,6 @@ export default {
 		const index = this.titleList.findIndex(item => item.id === id);
 		if (index !== -1) {
 			List2.listData[index].FilePicker2 = [];
-			FilePicker2.files.pop();
 			this.titleList[index].FilePicker2 = []; // Reset the file array
 			resetWidget("FilePicker2", true); // Reset the FilePicker widget
 		}
