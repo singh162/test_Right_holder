@@ -10,6 +10,7 @@ export default {
 
 			// If the deletion is successful, show success alert
 			showAlert("Titles deleted successfully!", "success");
+			await getTitlesServerFilters.run()
 		} catch (error) {
 			// Catching any errors and showing an error alert
 			console.error("Error deleting titles:", error);

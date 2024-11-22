@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 12,
+  "bottomRow": 4,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "TERTIARY",
@@ -32,14 +32,14 @@
     }
   ],
   "hideCard": false,
-  "iconName": "cross",
+  "iconName": "delete",
   "iconSVG": "/static/media/icon.e5045469a82b76384d0c537fc9545012.svg",
   "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
-  "isVisible": "{{ListTitles.titleList[currentIndex].FilePicker2.length>0}}",
-  "key": "rqkapcoiju",
-  "leftColumn": 62,
+  "isVisible": "{{List2.listData.length>1? true:false}}",
+  "key": "zamsmklumj",
+  "leftColumn": 61,
   "minWidth": 50,
   "mobileBottomRow": 4,
   "mobileLeftColumn": 60,
@@ -53,8 +53,8 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{ListTitles.removeFileListOnCrossClick(currentItem.id);}}",
-  "parentColumnSpace": 7.882606208324432,
+  "onClick": "{{ListTitles.deleteInputField(currentItem.id);}}",
+  "parentColumnSpace": 16.272790908813477,
   "parentId": "gbwe680llm",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
@@ -68,9 +68,9 @@
     "Buttons"
   ],
   "thumbnailSVG": "/static/media/thumbnail.b02b764a52db45d332efa723178a50a4.svg",
-  "topRow": 8,
+  "topRow": 0,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "33leljj4ap",
-  "widgetName": "IconButton11Copy"
+  "widgetId": "top6hh5fss",
+  "widgetName": "IconButton4Copy"
 }

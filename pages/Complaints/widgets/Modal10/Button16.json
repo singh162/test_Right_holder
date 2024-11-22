@@ -43,7 +43,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{DeleteTitles.run().then(() => {\n  showAlert('Title Deleted Sucessfully', 'success');\n  getAllTitlesByRightHolder.run();\n  closeModal(Modal10.name);\n});}}",
+  "onClick": "{{DeleteTitles.run().then(() => {\n  showAlert('Title Deleted Sucessfully', 'success');\n  getTitlesServerFilters.run();\n  closeModal(Modal10.name);\n  countTitles.run();\n});}}",
   "originalBottomRow": 22,
   "originalTopRow": 18,
   "parentId": "af26rcbkj9",

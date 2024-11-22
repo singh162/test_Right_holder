@@ -14,10 +14,6 @@
       {
         "name": "titleList",
         "value": "[{\n  id: 1,\n  titleName: \"\",\n  FilePicker2: []\n}]"
-      },
-      {
-        "name": "isTitleImageView",
-        "value": "[{\n  isVisible: false\n}]"
       }
     ]
   }

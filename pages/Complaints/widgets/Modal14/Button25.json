@@ -43,7 +43,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{deleteMutipleTitlesObject.deleteMutipleTitles().then(() => {\n  getAllTitlesByRightHolder.run();\n  closeModal(Modal14.name);\n});}}",
+  "onClick": "{{deleteMutipleTitlesObject.deleteMutipleTitles().then(() => {\n  getAllTitlesByRightHolder.run();\n  closeModal(Modal14.name);\n  countTitles.run();\n});}}",
   "parentId": "y32ur60e4a",
   "placement": "CENTER",
   "recaptchaType": "V3",

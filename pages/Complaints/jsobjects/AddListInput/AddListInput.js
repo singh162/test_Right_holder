@@ -34,7 +34,7 @@ export default {
 
 			// Remove the element at the found index using splice
 			this.listArray.splice(index, 1);
-			List1.listData.push(this.listArray);
+			List1.listData.push([...this.listArray]);
 		}
 		// Log the updated list data to the console
 		console.log("Updated List after delete: ", this.listArray);

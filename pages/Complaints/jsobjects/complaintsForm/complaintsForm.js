@@ -150,7 +150,7 @@ export default {
 
 	resetForm() {
 		AddListInput.listArray = [
-			{ id: this.index, 
+			{ id: 1, 
 			 input1: '', Description: '', FilePicker1: [] }
 		];
 		this.resetWidgets();

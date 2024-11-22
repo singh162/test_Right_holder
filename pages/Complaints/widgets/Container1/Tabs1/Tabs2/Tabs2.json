@@ -164,7 +164,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onTabSelected": "{{getAllTitlesByRightHolder.run()}}",
+  "onTabSelected": "{{getTitlesServerFilters.run()\ncountTitles.run();}}",
   "originalBottomRow": 67,
   "originalTopRow": 4,
   "parentColumnSpace": 19.12603759765625,
