@@ -29,7 +29,6 @@ export default {
 		if (index !== -1) {
 			List2.listData[index].FilePicker2 = [];
 			this.titleList[index].FilePicker2 = []; // Reset the file array
-			resetWidget("FilePicker2", true); // Reset the FilePicker widget
 		}
 	},
 	handleInputChange(id, field, value) {
