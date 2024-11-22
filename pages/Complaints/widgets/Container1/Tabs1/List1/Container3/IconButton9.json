@@ -50,7 +50,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{imageParsing.imageRendering(AddListInput.listArray[List1.pageNo - 1].FilePicker1);}}",
+  "onClick": "{{imageParsing.imageRendering(FilePicker1.files);}}",
   "parentColumnSpace": 16.272790908813477,
   "parentId": "ch1pyepglo",
   "parentRowSpace": 10,
