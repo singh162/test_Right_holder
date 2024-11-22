@@ -21,6 +21,9 @@
   "dynamicPropertyPathList": [
     {
       "key": "isVisible"
+    },
+    {
+      "key": "onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -34,7 +37,7 @@
   "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
-  "isVisible": "{{ListTitles.isTitleImageView[currentItem.id-1].isVisible}}",
+  "isVisible": "{{ListTitles.titleList[currentIndex].FilePicker2Copy.length>0}}",
   "key": "rqkapcoiju",
   "leftColumn": 62,
   "minWidth": 50,

@@ -3,11 +3,6 @@ export default {
 	titleList: [
 		{ id: 1, titleName: "", FilePicker2Copy: [] } // Start with one empty title entry
 	],
-	isTitleImageView:[
-		{
-			isVisible:false
-		}
-	],
 
 	// Function to add a new title entry
 	addTitle: () => {
@@ -15,11 +10,17 @@ export default {
 		this.titleList.push({ id: newId, titleName: "", FilePicker2Copy: [] }); // Add new entry
 		this.updateListData(); // Refresh the List widget data
 	},
+	deleteInputField(id) {
+		// Filter out the container with the matching ID
 
-	// Function to delete a title entry by ID
-	deleteInputField: (id) => {
-		this.titleList = this.titleList.filter(item => item.id !== id); // Remove entry by ID
-		this.updateListData(); // Refresh the List widget data
+		const index = this.titleList.findIndex(item => item.id === id);
+		// Check if the element is found
+		if (index !== -1) {
+			console.log("asd")
+			// Remove the element at the found index using splice
+			this.titleList.splice(index, 1);
+			List2.listData.push([...this.titleList]);
+		}
 	},
 
 	// Function to reset the file list for a title entry
@@ -27,37 +28,44 @@ export default {
 		const index = this.titleList.findIndex(item => item.id === id);
 		if (index !== -1) {
 			List2.listData[index].FilePicker2Copy = [];
-			this.isTitleImageView[index].isVisible = false;
+			resetWidget("FilePicker2Copy")
 			this.titleList[index].FilePicker2Copy = []; // Reset the file array
-			resetWidget("FilePicker2Copy", true); // Reset the FilePicker widget
 		}
 	},
+	handleInputChange(id, field, value) {
+		console.log(field, "field", value);
+		if (field === "FilePicker2Copy") {
+			const index = this.titleList.findIndex(item => item.id === id);
+			if (index !== -1) {
+				const currentFiles = this.titleList[index].FilePicker2Copy || [];
+				const newFiles = value.filter(
+					file => !currentFiles.some(existingFile => existingFile.name === file.name)
+				);
+				// Remove files that are no longer present in the value array
+				const updatedFiles = currentFiles.filter(
+					existingFile => value.some(file => file.name === existingFile.name)
+				);
 
-	// Function to handle input changes for title name and file selection
-	handleInputChange: (id, field, value) => {
-		const entry = this.titleList.find(item => item.id === id);
-		const index = this.titleList.findIndex(item => item.id === id);
+				// Combine updated existing files with new files
+				const combinedFiles = [...updatedFiles, ...newFiles];
 
-		if (entry) {
-			if (field === "FilePicker2Copy") {
-				if (entry.FilePicker2Copy.length < 3) {
-					this.isTitleImageView.push({
-						isVisible:false
-					})
-					this.isTitleImageView[index].isVisible = true;
-					entry.FilePicker2Copy.push(value); // Add new file if under limit
+				// Check the file count limit
+				if (combinedFiles.length <= 3) {
+					this.titleList[index].FilePicker2Copy = combinedFiles;
 				} else {
-					console.warn("Cannot add more than 3 files."); // Limit check
+					console.warn("Cannot add more than 3 files.");
 				}
-			} else {
-				entry[field] = value; // Update title name
 			}
+		} else {
+			this.titleList = this.titleList.map(item =>
+																					item.id === id ? { ...item, [field]: value } : item
+																				 );
 		}
-		this.updateListData(); // Refresh the List widget data
+		this.	updateListData();
 	},
 
 	// Helper function to update the List widget data
 	updateListData: () => {
-		List2.listData.push(this.titleList);
+		List2.listData.push([...this.titleList]);
 	}
 };

@@ -1,5 +1,5 @@
 {
-  "gitSyncId": "66fbe909af2b8e5a2a63f83d_c00d4a03-48db-45ab-b869-a447df2e0a5d",
+  "gitSyncId": "66fbe909af2b8e5a2a63f83d_2e6372df-bce5-44a8-bc45-9bfde7b31f4c",
   "id": "Registeration_ListTitles",
   "unpublishedCollection": {
     "name": "ListTitles",
@@ -14,10 +14,6 @@
       {
         "name": "titleList",
         "value": "[{\n  id: 1,\n  titleName: \"\",\n  FilePicker2Copy: []\n}]"
-      },
-      {
-        "name": "isTitleImageView",
-        "value": "[{\n  isVisible: false\n}]"
       }
     ]
   }

@@ -16,7 +16,6 @@ export default {
 		}
 		const expireAt = moment(expireDate[0].expire_at).format('YYYY-MM-DD HH:mm:ss');
 		const currentTime = moment().format('YYYY-MM-DD HH:mm:ss');
-
 		// Check if the current time is after the expire_at time
 		return moment(currentTime).isAfter(expireAt); // Returns true if session expired
 	},
@@ -33,7 +32,7 @@ export default {
 				console.log("titleItem",titleItem);
 
 				// Extract and decode the Base64 data portion from ownershipImage.data
-				const base64Data = titleItem.FilePicker2Copy[0][0].data.split(',')[1];
+				const base64Data = titleItem.FilePicker2Copy[0].data.split(',')[1];
 				if (!base64Data) {
 					showAlert("Invalid image data format for title: " + titleItem.titleName, "error");
 					continue; // Skip to the next title
