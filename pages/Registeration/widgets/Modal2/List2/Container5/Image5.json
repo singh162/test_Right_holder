@@ -56,7 +56,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{saveTitleView.Image5onClick(FilePicker2Copy.files[0].data);}}",
+  "onClick": "{{saveTitleView.Image5onClick(ListTitles.titleList[currentIndex].FilePicker2Copy[0].data);}}",
   "parentColumnSpace": 7.882606208324432,
   "parentId": "ksqh2eprr7",
   "parentRowSpace": 10,
