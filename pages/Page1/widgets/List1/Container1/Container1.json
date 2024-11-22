@@ -33,8 +33,11 @@
       "leftColumn": 0,
       "maxDynamicHeight": 9000,
       "minDynamicHeight": 4,
+      "minHeight": null,
       "minWidth": 450,
+      "mobileBottomRow": null,
       "mobileLeftColumn": 0,
+      "mobileRightColumn": null,
       "mobileTopRow": 0,
       "needsErrorInfo": false,
       "onCanvasUI": {
@@ -45,15 +48,16 @@
         "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
       },
       "parentColumnSpace": 1,
-      "parentId": "q50tgje0be",
+      "parentId": "1yac3cxmy9",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
+      "rightColumn": null,
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "useAutoLayout": false,
       "version": 1,
-      "widgetId": "lexnaoenyu",
+      "widgetId": "bdrrqm2wju",
       "widgetName": "Canvas2"
     }
   ],
@@ -100,7 +104,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "parentId": "a99k5vhm83",
+  "parentId": "fw2azufzrb",
   "positioning": "fixed",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -118,6 +122,6 @@
   "topRow": 0,
   "type": "CONTAINER_WIDGET",
   "version": 1,
-  "widgetId": "q50tgje0be",
+  "widgetId": "1yac3cxmy9",
   "widgetName": "Container1"
 }
