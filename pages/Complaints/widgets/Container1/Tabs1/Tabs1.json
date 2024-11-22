@@ -80,6 +80,7 @@
         }
       ],
       "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
       "flexLayers": [],
       "hideCard": true,
       "isDeprecated": false,
@@ -112,7 +113,7 @@
       "rightColumn": 427.875,
       "shouldScrollContents": false,
       "tabId": "tab2",
-      "tabName": "Tab 2",
+      "tabName": "Add Complaints",
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
@@ -300,7 +301,7 @@
       "index": 0,
       "isDuplicateLabel": false,
       "isVisible": true,
-      "label": "Add Complaints new",
+      "label": "Add Complaints",
       "positioning": "vertical",
       "widgetId": "e4lzsh4ai0"
     },

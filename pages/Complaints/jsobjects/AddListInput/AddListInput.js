@@ -55,21 +55,23 @@ export default {
 		if (field === "FilePicker1") {
 			const index = this.listArray.findIndex(item => item.id === id);
 			if (index !== -1) {
-				if (FilePicker1.files.length === 0) {
-					// Handle the cancel action
-					console.log("File selection canceled");
-					this.listArray[index].FilePicker1 = []; // Clear the file array
-				} else {
-					const currentFiles = this.listArray[index].FilePicker1 || [];
-					const newFiles = value.filter(
-						file => !currentFiles.some(existingFile => existingFile.name === file.name)
-					);
+				const currentFiles = this.listArray[index].FilePicker1 || [];
+				const newFiles = value.filter(
+					file => !currentFiles.some(existingFile => existingFile.name === file.name)
+				);
+				// Remove files that are no longer present in the value array
+				const updatedFiles = currentFiles.filter(
+					existingFile => value.some(file => file.name === existingFile.name)
+				);
 
-					if (currentFiles.length + newFiles.length <= 3) {
-						this.listArray[index].FilePicker1 = [...currentFiles, ...newFiles];
-					} else {
-						console.warn("Cannot add more than 3 files.");
-					}
+				// Combine updated existing files with new files
+				const combinedFiles = [...updatedFiles, ...newFiles];
+
+				// Check the file count limit
+				if (combinedFiles.length <= 3) {
+					this.listArray[index].FilePicker1 = combinedFiles;
+				} else {
+					console.warn("Cannot add more than 3 files.");
 				}
 			}
 		} else {

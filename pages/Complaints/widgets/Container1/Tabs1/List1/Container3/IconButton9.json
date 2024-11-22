@@ -12,12 +12,18 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "isVisible"
+    },
+    {
+      "key": "onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -31,7 +37,7 @@
   "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
-  "isVisible": "true",
+  "isVisible": "{{AddListInput.listArray[currentIndex].FilePicker1.length>0}}",
   "key": "dc0kpcjlv9",
   "leftColumn": 38,
   "minWidth": 50,
@@ -47,7 +53,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{imageParsing.imageRendering(FilePicker2Copy1.files);}}",
+  "onClick": "{{imageParsing.imageRendering(AddListInput.listArray[currentIndex].FilePicker1);}}",
   "parentColumnSpace": 16.272790908813477,
   "parentId": "ch1pyepglo",
   "parentRowSpace": 10,
