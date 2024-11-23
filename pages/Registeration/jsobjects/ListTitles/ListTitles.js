@@ -26,10 +26,13 @@ export default {
 	// Function to reset the file list for a title entry
 	removeFileListOnCrossClick: (id) => {
 		const index = this.titleList.findIndex(item => item.id === id);
+		console.log("text1");
 		if (index !== -1) {
 			List2.listData[index].FilePicker2Copy = [];
-			resetWidget("FilePicker2Copy")
+			resetWidget("FilePicker2Copy");
 			this.titleList[index].FilePicker2Copy = []; // Reset the file array
+			console.log("text2",List2.listData[index],	this.titleList[index]);
+
 		}
 	},
 	handleInputChange(id, field, value) {
