@@ -97,6 +97,7 @@
       "key": "listData"
     }
   ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [],
   "enhancements": true,
   "flexVerticalAlignment": "start",
@@ -128,6 +129,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
+  "onItemClick": "{{}}",
   "originalBottomRow": 65,
   "originalTopRow": 9,
   "pageSize": 1,

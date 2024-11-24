@@ -6,7 +6,6 @@ export default {
 			titleName:"",
 			FilePicker2Copy: []
 		}]
-
 		resetWidget("List2");
 		console.log("listti4EL",ListTitles.titleList)
 	},

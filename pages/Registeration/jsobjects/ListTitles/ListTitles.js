@@ -30,29 +30,15 @@ export default {
 		if (index !== -1) {
 			// Update the titleList array directly
 			this.titleList[index].FilePicker2Copy = []; // Clear the file array for the selected item
-
+			List2.listData[index].FilePicker2Copy = [];
 			// Reset the FilePicker widget for the specific item
-			resetWidget(`FilePicker2Copy-${id}`);
+			resetWidget('FilePicker2Copy');
 
 			console.log("FilePicker reset for item:", id, this.titleList[index]);
 		} else {
 			console.log("Item not found for id:", id);
 		}
 	},
-
-	// // Function to reset the file list for a title entry
-	// removeFileListOnCrossClick: (id) => {
-	// const index = this.titleList.findIndex(item => item.id === id);
-	// console.log("text1");
-	// if (index !== -1) {
-	// List2.listData[index].FilePicker2Copy = [];
-	// resetWidget("FilePicker2Copy");
-	// this.titleList[index].FilePicker2Copy = []; // Reset the file array
-	// 
-	// console.log("text2",List2.listData[index],	this.titleList[index],"FilePicker2Copy",FilePicker2Copy);
-	// 
-	// }
-	// },
 	handleInputChange(id, field, value) {
 		console.log(field, "field", value);
 		if (field === "FilePicker2Copy") {

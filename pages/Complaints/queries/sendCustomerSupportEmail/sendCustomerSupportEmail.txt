@@ -3,7 +3,7 @@
 <head>
 <title>Customer Query</title>
 <style>
-body {
+body {Customer Inquiry: Request for Support
 	font-family: Arial, sans-serif;
 	line-height: 1.6;
 	color: #333;
