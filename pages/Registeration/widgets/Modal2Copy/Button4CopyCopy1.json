@@ -16,11 +16,7 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -48,7 +44,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{AddTitles.addTitles();}}",
+  "onClick": "{{AddTitles.addTitles();\nresetWidget(\"List2\",true)\n}}",
   "originalBottomRow": 22,
   "originalTopRow": 18,
   "parentId": "0yxff9p6bd",

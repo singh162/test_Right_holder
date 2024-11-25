@@ -30,8 +30,8 @@ INSERT INTO test_taoq_reach.rightHolderProfile (
 	'{{this.params.country}}', 
 	'{{this.params.acknowledgment}}', 
 	'{{this.params.status}}',
-	FROM_BASE64('{{this.params.copyRightLetter}}'),
+	FROM_BASE64('{{appsmith.store.copyRightLetter}}'),
 	'{{this.params.digitalSignature}}', 
-	FROM_BASE64('{{this.params.contentOwnerShip}}'),
-	FROM_BASE64('{{this.params.document}}')
+	FROM_BASE64('{{appsmith.store.contentOwnerShip}}'),
+	FROM_BASE64('{{appsmith.store.indentificationProff}}')
 );

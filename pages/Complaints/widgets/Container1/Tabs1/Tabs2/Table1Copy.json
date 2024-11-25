@@ -34,10 +34,12 @@
     "name",
     "ownershipImage",
     "id",
+    "Status",
+    "rejectedReason",
     "customColumn1",
     "customColumn2"
   ],
-  "columnUpdatedAt": 1731908398755,
+  "columnUpdatedAt": 1732520942141,
   "columnWidthMap": {
     "customColumn1": 143,
     "name": 254
@@ -82,11 +84,23 @@
     },
     {
       "key": "totalRecordsCount"
+    },
+    {
+      "key": "primaryColumns.Status.computedValue"
+    },
+    {
+      "key": "primaryColumns.rejectedReason.computedValue"
+    },
+    {
+      "key": "primaryColumns.Status.cellBackground"
     }
   ],
   "dynamicPropertyPathList": [
     {
       "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.Status.cellBackground"
     }
   ],
   "dynamicTriggerPathList": [
@@ -119,7 +133,7 @@
   "isVisibleSearch": true,
   "key": "xqhd5o9jfq",
   "label": "Data",
-  "leftColumn": 1,
+  "leftColumn": 2,
   "minWidth": 450,
   "mobileBottomRow": 34,
   "mobileLeftColumn": 15,
@@ -136,10 +150,46 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onPageChange": "{{getTitlesServerFilters.run()}}",
+  "originalBottomRow": 38,
+  "originalTopRow": 6,
   "parentColumnSpace": 6.9375,
   "parentId": "dbwdh2qc56",
   "parentRowSpace": 10,
   "primaryColumns": {
+    "Status": {
+      "alias": "Status",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Status\"] === 'Approved' ? \"#0fd926\" : (currentRow[\"Status\"] === 'Under Review' ? \"#808080\" : (currentRow[\"Status\"] === 'Rejected' ? \"#ef4444\" : (\n\tcurrentRow[\"Status\"] === 'Blocked' ? \"#14e82e\" :\"#d6ea0d\"\n))) ))}}",
+      "columnType": "text",
+      "computedValue": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Status\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "Status",
+      "index": 3,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Status",
+      "notation": "standard",
+      "originalId": "Status",
+      "sticky": "",
+      "textColor": "#fdfefe",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "customColumn1": {
       "alias": "Update",
       "allowCellWrapping": false,
@@ -322,13 +372,48 @@
       "validation": {},
       "verticalAlignment": "CENTER",
       "width": 150
+    },
+    "rejectedReason": {
+      "alias": "rejectedReason",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"rejectedReason\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "rejectedReason",
+      "index": 4,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Rejection Reason",
+      "notation": "standard",
+      "originalId": "rejectedReason",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
     }
   },
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 62,
+  "rightColumn": 63,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
+  "showInlineEditingOptionDropdown": true,
   "tableData": "{{getTitlesServerFilters.data}}",
   "tags": [
     "Suggested",

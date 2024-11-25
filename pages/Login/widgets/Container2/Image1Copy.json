@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 14,
+  "bottomRow": 13,
   "boxShadow": "none",
   "defaultImage": "https://www.saip.gov.sa/images/saip-logo-en.svg",
   "displayName": "Image",
@@ -19,7 +19,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "xb2mxu6p0u",
-  "leftColumn": 11,
+  "leftColumn": 15,
   "maxZoomLevel": 1,
   "mobileBottomRow": 12,
   "mobileLeftColumn": 51,
@@ -38,7 +38,7 @@
   "parentId": "f041argm2i",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 44,
+  "rightColumn": 48,
   "tags": [
     "Media"
   ],

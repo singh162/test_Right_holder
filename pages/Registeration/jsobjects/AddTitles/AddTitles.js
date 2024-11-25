@@ -53,9 +53,8 @@ export default {
 				FilePicker2Copy: []
 			}]
 			showAlert("Complaint title(s) added successfully!", "success");
-			closeModal(Modal2Copy.name).then(() => {
-				resetWidget("List2", true);
-			});
+			this.resetWidgets();
+			closeModal(Modal2Copy.name);
 
 		} catch (error) {
 			console.error("Error during addTitles:", error);

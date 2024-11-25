@@ -1,6 +1,7 @@
 {
   "allowedFileTypes": [
-    "image/*"
+    "image/jpeg",
+    ".png"
   ],
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -13,7 +14,12 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onFilesSelected"
+    }
+  ],
   "dynamicTyping": true,
   "fileDataType": "Base64",
   "files": [],
@@ -28,7 +34,7 @@
   "key": "caopdsmnd2",
   "label": "Select Files",
   "leftColumn": 21,
-  "maxFileSize": 5,
+  "maxFileSize": "5",
   "maxNumFiles": 1,
   "minWidth": 120,
   "mobileBottomRow": 162,
@@ -43,8 +49,9 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 83,
-  "originalTopRow": 79,
+  "onFilesSelected": "",
+  "originalBottomRow": 87,
+  "originalTopRow": 83,
   "parentColumnSpace": 12.15625,
   "parentId": "lre5o5g67c",
   "parentRowSpace": 10,

@@ -24,6 +24,7 @@ export default {
 			// Show success alert
 			showAlert("Title updated successfully!", "success");
 			await getAllTitlesByRightHolder.run();
+			await getTitlesServerFilters.run();
 			closeModal(Modal13.name);
 		} catch (error) {
 			// Catch and display any errors

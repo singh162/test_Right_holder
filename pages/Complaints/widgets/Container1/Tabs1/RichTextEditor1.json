@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 51,
+  "bottomRow": 52,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "defaultText": "",
   "displayName": "Rich Text Editor",
@@ -49,6 +49,8 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
+  "originalBottomRow": 51,
+  "originalTopRow": 10,
   "parentColumnSpace": 15.851066589355469,
   "parentId": "yfcgm6bk7o",
   "parentRowSpace": 10,
@@ -63,7 +65,7 @@
     "Inputs"
   ],
   "thumbnailSVG": "/static/media/thumbnail.b19d2640527b6f3fd53fe51eb20774d0.svg",
-  "topRow": 10,
+  "topRow": 11,
   "type": "RICH_TEXT_EDITOR_WIDGET",
   "version": 1,
   "widgetId": "j17ehd9j3l",

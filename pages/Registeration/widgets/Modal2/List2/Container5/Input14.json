@@ -1,6 +1,6 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "animateLoading": true,
+  "animateLoading": false,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 6,
@@ -24,6 +24,9 @@
   "dynamicTriggerPathList": [
     {
       "key": "onTextChanged"
+    },
+    {
+      "key": "onSubmit"
     }
   ],
   "hideCard": false,
@@ -58,10 +61,12 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onTextChanged": "{{ ListTitles.handleInputChange(currentItem.id, 'titleName', Input14.text) }}\n",
+  "onSubmit": "",
+  "onTextChanged": "{{ListTitles.handleInputChange(currentItem.id, 'titleName', Input14.text) }}",
   "parentColumnSpace": 7.882606208324432,
   "parentId": "ksqh2eprr7",
   "parentRowSpace": 10,
+  "placeholderText": "",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",

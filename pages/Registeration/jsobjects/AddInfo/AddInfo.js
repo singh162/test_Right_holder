@@ -35,6 +35,11 @@ export default {
 		try{
 			let rightHolderInfoId= this.generateUUID();
 			if(!await this.checkExpireUser()){
+				storeValue("indentificationProff", FilePicker1.files.length > 0 ?FilePicker1.files[0].data.replace(/^data:image\/\w+;base64,/, '')
+									 : null);
+				storeValue("copyRightLetter", FilePicker2.files.length>0 ? FilePicker2.files[0].data.replace(/^data:image\/\w+;base64,/, '') : null);
+
+				storeValue("contentOwnerShip",FilePicker1Copy.files.length > 0 ?FilePicker1Copy.files[0].data.replace(/^data:image\/\w+;base64,/, '') : null);
 				await AddRightHolderInfo.run(
 					{
 						rightHolderUserId: appsmith.store.rightHolderUserId,
@@ -50,10 +55,6 @@ export default {
 						country: Select2Copy.selectedOptionLabel, // Replace with actual country value
 						acknowledgment: Checkbox1Copy.isChecked,
 						status: "Under Review",
-						document: FilePicker1.files.length > 0 ?FilePicker1.files[0].data.replace(/^data:image\/\w+;base64,/, '')
-						: null,
-						copyRightLetter: FilePicker2.files.length>0 ? FilePicker2.files[0].data.replace(/^data:image\/\w+;base64,/, '') : null,
-						contentOwnerShip : FilePicker1Copy.files.length > 0 ?FilePicker1Copy.files[0].data.replace(/^data:image\/\w+;base64,/, '') : null,
 						digitalSignature: DigitalSignature.text,
 						inserted_at: moment().format('YYYY-MM-DD HH:mm:ss'),
 						updated_at: moment().format('YYYY-MM-DD HH:mm:ss')
@@ -75,6 +76,7 @@ export default {
 			}
 		}
 		catch(ex){
+			console.log(ex);
 			showAlert(`error inserting the form,Please try after some time${ex.message}`,"error");
 		}
 	}

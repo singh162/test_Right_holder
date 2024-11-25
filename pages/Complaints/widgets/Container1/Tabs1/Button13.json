@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 69,
+  "bottomRow": 70,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
@@ -43,6 +43,8 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onClick": "{{sendCustomerEmail.sendEMail();}}",
+  "originalBottomRow": 69,
+  "originalTopRow": 65,
   "parentColumnSpace": 15.851066589355469,
   "parentId": "yfcgm6bk7o",
   "parentRowSpace": 10,
@@ -62,7 +64,7 @@
   "text": "Send Support Request",
   "thumbnailSVG": "/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
   "tooltip": "",
-  "topRow": 65,
+  "topRow": 66,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "x9wxevp085",
