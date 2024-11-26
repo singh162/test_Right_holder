@@ -43,11 +43,9 @@ body {
 <body>
 <div class="container">
 <div class="header">
-Hi SAIP Team,
+Hi Online Antipiracy Team,
 </div>
 <div class="content">
-<p>I hope this message finds you well.</p>
-
 <p> We have received an Intellectual Property Violation Complaint request from {{HolderName.text}} </p>
 
 <p><strong>Please review the details provided below:</strong></p>
@@ -59,7 +57,7 @@ Hi SAIP Team,
 <li><strong>Phone Number:</strong> {{Select1.selectedOptionLabel}}-{{phoneNumber.text}}</li>
 <li><strong>Address:</strong> {{Address.text}}, {{City.text}}, {{State.text}}, {{Select2Copy.selectedOptionLabel}} (Country)</li>
 </ul>
-<p> We have attached the Copyright Ownership Document and Identification Proof for verfication </p>
+<p> We have attached the Copyright Ownership Document and Identification Proof for verification </p>
 
 <p>For your convenience, you can click the link below to access the Dashboard directly:</p>
 
@@ -68,7 +66,7 @@ https://saip.bytes.care/app/saip-test/dashboard-66fe3a8daf2b8e5a2a63fc02?branch=
 </a></p>
 
 
-<p> We kindly ask that you prioritize the verification of this information and update the Approved/Rejected Status in the Dashboard for {{HolderName.text}} rightHolder profile.</p>
+<p> We kindly ask that you prioritize the verification of this information and update the Approved/Rejected Status in the Dashboard for {{HolderName.text}} profile.</p>
 </div>
 <div class="footer">
 

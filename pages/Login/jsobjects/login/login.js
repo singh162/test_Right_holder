@@ -56,9 +56,9 @@ export default {
 						if (checkData && checkData.length > 0) {
 							if (checkData[0].Status === "Under Review") {
 								this.modalText = `Dear ${checkData[0].rightHolderName},
-Thank you for your submission. Your details are currently being reviewed by SAIP.
-We understand that waiting can be challenging, and we appreciate your patience as we work through this process.
-You will receive an email notification as soon as your verification is complete.
+Thank you for your submission. Your application is currently being reviewed by SAIP.
+we appreciate your patience as we work through this process.
+You will receive an email as soon as your verification is complete.
 
 Would you like to view your profile?
 `;
