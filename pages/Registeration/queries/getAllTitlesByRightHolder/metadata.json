@@ -5,15 +5,15 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT id, name , ownershipImage,Status FROM complaints_title where rightHolderUserId = '{{appsmith.store.rightHolderUserId}}';",
+      "body": "SELECT id, name , ownershipImage,Status FROM complaints_title where rightHolderUserId = '{{appsmith.store.rightHolderUserId}}'\n and complaints_title.name like '%{{Table1.searchText || \"\"}}%'\nORDER BY {{Table1.sortOrder.column || 'complaints_title.name'}} {{Table1.sortOrder.order || \"ASC\"}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ],
-      "timeoutInMillisecond": 10000
+      "timeoutInMillisecond": 100000
     },
     "confirmBeforeExecute": false,
     "datasource": {

@@ -5,12 +5,12 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT count(*) as count FROM complaints_title where rightHolderUserId ='{{appsmith.store.rightHolderUserId}}';",
+      "body": "SELECT count(*) as count FROM complaints_title where rightHolderUserId ='{{appsmith.store.rightHolderUserId}}'and complaints_title.name like '%{{Table1.searchText || \"\"}}%';",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ],
       "timeoutInMillisecond": 100000

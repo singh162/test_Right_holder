@@ -57,9 +57,6 @@
       "key": "boxShadow"
     },
     {
-      "key": "tableData"
-    },
-    {
       "key": "primaryColumns.name.computedValue"
     },
     {
@@ -76,12 +73,12 @@
     },
     {
       "key": "primaryColumns.Status.cellBackground"
+    },
+    {
+      "key": "tableData"
     }
   ],
   "dynamicPropertyPathList": [
-    {
-      "key": "tableData"
-    },
     {
       "key": "primaryColumns.Status.cellBackground"
     },
@@ -90,6 +87,9 @@
     },
     {
       "key": "onPageChange"
+    },
+    {
+      "key": "tableData"
     },
     {
       "key": "onSearchTextChanged"
@@ -137,8 +137,8 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onPageChange": "{{getTitlesServerFilters.run()}}",
-  "onSearchTextChanged": "{{getTitlesServerFilters.run()}}",
+  "onPageChange": "{{viewTitlesObject.mappTitleData();}}",
+  "onSearchTextChanged": "{{viewTitlesObject.mappTitleData();}}",
   "parentColumnSpace": 6.9375,
   "parentId": "3s6rz4ggmk",
   "parentRowSpace": 10,
@@ -286,7 +286,7 @@
   "rightColumn": 59,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
-  "tableData": "{{getTitlesServerFilters.data}}",
+  "tableData": "{{viewTitlesObject.titleData}}",
   "tags": [
     "Suggested",
     "Display"
