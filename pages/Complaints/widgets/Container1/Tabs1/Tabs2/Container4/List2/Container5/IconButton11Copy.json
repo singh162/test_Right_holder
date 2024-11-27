@@ -21,9 +21,6 @@
   "dynamicPropertyPathList": [
     {
       "key": "isVisible"
-    },
-    {
-      "key": "onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -53,7 +50,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{ListTitles.removeFileListOnCrossClick(currentItem.id);}}",
+  "onClick": "{{ListTitles.removeFileListOnCrossClick(currentItem.id);\nresetWidget(\"List2\", true);}}",
   "parentColumnSpace": 7.882606208324432,
   "parentId": "gbwe680llm",
   "parentRowSpace": 10,
