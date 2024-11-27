@@ -6,11 +6,11 @@ export default {
 			titleName:"",
 			FilePicker2Copy: []
 		}]
-		resetWidget("List2");
+		resetWidget("List2",true);
 		console.log("listti4EL",ListTitles.titleList)
 	},
-	titleModal() {
-		this.resetWidgets(); // Corrected: No additional ()
+	async titleModal() {
 		showModal(Modal2.name); // Corrected: Use the modal's name as a string
+		this.resetWidgets(); // Corrected: No additional ()
 	},
 };

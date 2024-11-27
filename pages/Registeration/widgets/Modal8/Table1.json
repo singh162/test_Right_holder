@@ -87,6 +87,12 @@
     },
     {
       "key": "primaryColumns.Status.textColor"
+    },
+    {
+      "key": "onPageChange"
+    },
+    {
+      "key": "onSearchTextChanged"
     }
   ],
   "dynamicTriggerPathList": [
@@ -95,6 +101,9 @@
     },
     {
       "key": "onPageChange"
+    },
+    {
+      "key": "onSearchTextChanged"
     }
   ],
   "enableClientSideSearch": true,
@@ -129,6 +138,7 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onPageChange": "{{getTitlesServerFilters.run()}}",
+  "onSearchTextChanged": "{{getTitlesServerFilters.run()}}",
   "parentColumnSpace": 6.9375,
   "parentId": "3s6rz4ggmk",
   "parentRowSpace": 10,

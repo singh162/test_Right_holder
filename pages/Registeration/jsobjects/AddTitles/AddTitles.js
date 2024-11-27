@@ -47,22 +47,18 @@ export default {
 					updated_at: moment().format('YYYY-MM-DD HH:mm:ss')
 				});
 			}
-			ListTitles.titleList = [{
-				id:1,
-				titleName:"",
-				FilePicker2Copy: []
-			}]
 			showAlert("Complaint title(s) added successfully!", "success");
-			this.resetWidgets();
-			closeModal(Modal2Copy.name);
+			resetWidget("List2",true);
+			resetWidget("Checkbox1",true);
+			closeModal(Modal2.name);
+
+			// closeModal(Modal2Copy.name);
 
 		} catch (error) {
+			resetWidget("List2",true);
+			resetWidget("Checkbox1",true);
 			console.error("Error during addTitles:", error);
 			showAlert("Failed to add complaint title: " + error.message, "error");
 		}
-	},
-	resetWidgets() {
-		resetWidget("Input14", true);
-		resetWidget("List2", true);
 	},
 };

@@ -1,12 +1,15 @@
 {
-  "accentColor": "#034059",
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "alignWidget": "LEFT",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 123,
-  "defaultCheckedState": false,
+  "bottomRow": 55,
+  "defaultCheckedState": true,
   "displayName": "Checkbox",
   "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
     {
       "key": "borderRadius"
     }
@@ -18,22 +21,21 @@
   "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
-  "isRequired": true,
+  "isRequired": false,
   "isVisible": true,
-  "key": "j3m3hhcqur",
-  "label": "",
-  "labelPosition": "Left",
+  "key": "lbh0301b1j",
+  "label": "By selecting this checkbox, you confirm that the information on all tiles is correct.",
+  "labelPosition": "Right",
   "labelStyle": "BOLD",
-  "labelTextColor": "#231f20",
   "labelTextSize": "1rem",
-  "leftColumn": 38,
+  "leftColumn": 11,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 131,
-  "mobileLeftColumn": 18,
-  "mobileRightColumn": 30,
-  "mobileTopRow": 127,
+  "mobileBottomRow": 54,
+  "mobileLeftColumn": 14,
+  "mobileRightColumn": 26,
+  "mobileTopRow": 50,
   "needsErrorInfo": false,
   "onCanvasUI": {
     "disableParentSelection": false,
@@ -42,14 +44,14 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 123,
-  "originalTopRow": 119,
-  "parentColumnSpace": 12.15625,
-  "parentId": "lre5o5g67c",
+  "originalBottomRow": 57,
+  "originalTopRow": 51,
+  "parentColumnSpace": 13.25,
+  "parentId": "wlrwpuemx9",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 40,
+  "rightColumn": 61,
   "searchTags": [
     "boolean"
   ],
@@ -57,9 +59,9 @@
     "Toggles"
   ],
   "thumbnailSVG": "/static/media/thumbnail.aa4d27836e27bb6c4c45db14dee8f2b2.svg",
-  "topRow": 119,
+  "topRow": 51,
   "type": "CHECKBOX_WIDGET",
   "version": 1,
-  "widgetId": "wiq1lcgcp8",
-  "widgetName": "Checkbox1Copy"
+  "widgetId": "r8053m6eho",
+  "widgetName": "Checkbox1"
 }

@@ -73,6 +73,7 @@
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
   "flexVerticalAlignment": "stretch",
   "hideCard": false,
   "iconSVG": "/static/media/icon.b4f5f9eb27fc2bb537b53187836aea6c.svg",
