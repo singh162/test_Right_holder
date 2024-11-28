@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "66fbe909af2b8e5a2a63f83d_6039f3b5-7694-4159-bae9-25f50e8652f7",
-  "id": "Login_updateVerifyToken",
+  "gitSyncId": "66fbe909af2b8e5a2a63f83d_fa3363d1-eda4-47fd-b5f9-c910346b27dd",
+  "id": "VerifyEmail_updateVerifyTokenCopy",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -28,8 +28,8 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "updateVerifyToken",
-    "pageId": "Login",
+    "name": "updateVerifyTokenCopy",
+    "pageId": "VerifyEmail",
     "userSetOnLoad": false
   }
 }

@@ -1,14 +1,14 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 45,
+  "bottomRow": 43,
   "boxShadow": "none",
   "canEscapeKeyClose": true,
-  "canOutsideClickClose": true,
+  "canOutsideClickClose": false,
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 450,
+      "bottomRow": 430,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -32,7 +32,7 @@
       "leftColumn": 0,
       "maxDynamicHeight": 9000,
       "minDynamicHeight": 4,
-      "minHeight": 500,
+      "minHeight": 430,
       "minWidth": 450,
       "mobileBottomRow": 240,
       "mobileLeftColumn": 0,
@@ -68,7 +68,8 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "height": 450,
+  "dynamicTriggerPathList": [],
+  "height": 430,
   "hideCard": false,
   "iconSVG": "/static/media/icon.47fe8500526372db96cb58a82187ffeb.svg",
   "isCanvas": true,
@@ -78,7 +79,7 @@
   "leftColumn": 20,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 24,
-  "minHeight": 450,
+  "minHeight": 430,
   "mobileBottomRow": 114,
   "mobileLeftColumn": 20,
   "mobileRightColumn": 44,
@@ -111,5 +112,5 @@
   "version": 2,
   "widgetId": "fcjkfzc4nv",
   "widgetName": "VerifyEmailModal",
-  "width": 1156
+  "width": 987.05
 }

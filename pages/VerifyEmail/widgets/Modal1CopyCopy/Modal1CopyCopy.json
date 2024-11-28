@@ -1,14 +1,14 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 377,
+  "bottomRow": 34,
   "boxShadow": "none",
   "canEscapeKeyClose": true,
   "canOutsideClickClose": false,
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 360,
+      "bottomRow": 340,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -32,7 +32,7 @@
       "leftColumn": 0,
       "maxDynamicHeight": 9000,
       "minDynamicHeight": 4,
-      "minHeight": 410,
+      "minHeight": 430,
       "minWidth": 450,
       "mobileBottomRow": 240,
       "mobileLeftColumn": 0,
@@ -47,7 +47,7 @@
         "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
       },
       "parentColumnSpace": 1,
-      "parentId": "xsax221r29",
+      "parentId": "oelmwvnsri",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -56,8 +56,8 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "33q6m9ck6u",
-      "widgetName": "Canvas24Copy"
+      "widgetId": "emskvct1cn",
+      "widgetName": "Canvas24CopyCopy"
     }
   ],
   "detachFromLayout": true,
@@ -69,7 +69,7 @@
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
-  "height": 360,
+  "height": 340,
   "hideCard": false,
   "iconSVG": "/static/media/icon.47fe8500526372db96cb58a82187ffeb.svg",
   "isCanvas": true,
@@ -79,7 +79,7 @@
   "leftColumn": 12,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 24,
-  "minHeight": 360,
+  "minHeight": 340,
   "mobileBottomRow": 90,
   "mobileLeftColumn": 12,
   "mobileRightColumn": 36,
@@ -107,10 +107,10 @@
     "Layout"
   ],
   "thumbnailSVG": "/static/media/thumbnail.c20e144182d9af35cde59e39d9afe632.svg",
-  "topRow": 17,
+  "topRow": 35,
   "type": "MODAL_WIDGET",
   "version": 2,
-  "widgetId": "xsax221r29",
-  "widgetName": "Modal1Copy",
+  "widgetId": "oelmwvnsri",
+  "widgetName": "Modal1CopyCopy",
   "width": 954
 }

@@ -45,6 +45,10 @@ export default {
 					navigateTo('Login', {}, 'SAME_WINDOW');
 				}, 10000); // 10 seconds
 			}
+			else
+			{
+				showModal(Modal1CopyCopy.name);
+			}
 		}
 	},
 

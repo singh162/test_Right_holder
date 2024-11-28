@@ -13,13 +13,27 @@ export default {
 			const verificationToken = this.generateUUID(); 
 			const verifyId = this.generateUUID(); 
 
-			const tokenPayload = {
-				id: verifyId,
-				user_id: appsmith.store.rightHolderUserId,
-				token: verificationToken,
-				expire_at: verificationExpires
-			};
-			await Insert_Verification_Token.run(tokenPayload);
+			let exitsAccessToken= await checkAccessTokenExits.run({user_id: appsmith.store.rightHolderUserId});
+
+			if(exitsAccessToken && exitsAccessToken.length >0){
+				console.log("verifyToken",exitsAccessToken);
+				await updateVerifyToken.run({
+					user_id: appsmith.store.rightHolderUserId,
+					token: verificationToken
+				});
+			}
+			else
+			{
+				console.log("iNserverifyToken",exitsAccessToken);
+
+				const tokenPayload = {
+					id: verifyId,
+					user_id: appsmith.store.rightHolderUserId,
+					token: verificationToken,
+					expire_at: verificationExpires
+				};
+				await Insert_Verification_Token.run(tokenPayload);
+			}
 			await verifyEmail.run(); // Run the email verification function
 			closeModal(Modal7Copy.name);
 			showModal(Modal7.name);

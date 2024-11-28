@@ -1,41 +1,38 @@
 {
   "animateLoading": true,
-  "backgroundColor": "{{}}",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 15,
+  "bottomRow": 25,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
     },
     {
+      "key": "fontFamily"
+    },
+    {
       "key": "borderRadius"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicPropertyPathList": [
-    {
-      "key": "backgroundColor"
-    }
-  ],
   "dynamicTriggerPathList": [],
-  "fontFamily": "System Default",
-  "fontSize": "1rem",
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "1.25rem",
   "fontStyle": "BOLD",
   "hideCard": false,
   "iconSVG": "/static/media/icon.301748e14b0306a7b94ece2d9e2c11cc.svg",
   "isDeprecated": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "0w65yeilvj",
-  "leftColumn": 54,
+  "key": "1684m2rg13",
+  "leftColumn": 5,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 4,
-  "mobileLeftColumn": 0,
-  "mobileRightColumn": 15,
-  "mobileTopRow": 0,
+  "mobileBottomRow": 19,
+  "mobileLeftColumn": 22,
+  "mobileRightColumn": 38,
+  "mobileTopRow": 15,
   "needsErrorInfo": false,
   "onCanvasUI": {
     "disableParentSelection": false,
@@ -44,15 +41,15 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 15,
-  "originalTopRow": 10,
+  "originalBottomRow": 25,
+  "originalTopRow": 17,
   "overflow": "NONE",
-  "parentColumnSpace": 2.8828125,
-  "parentId": "9wksmhrkzt",
+  "parentColumnSpace": 12.712890625,
+  "parentId": "emskvct1cn",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 63,
+  "rightColumn": 62,
   "searchTags": [
     "typography",
     "paragraph",
@@ -63,14 +60,14 @@
     "Suggested",
     "Content"
   ],
-  "text": "إحترام الملكية الفكرية",
-  "textAlign": "RIGHT",
-  "textColor": "#ffffff",
+  "text": "It looks like the verification link you used is no longer valid. This might happen if you requested a new verification email. Please check your email for the latest verification link or request a new one if needed",
+  "textAlign": "CENTER",
+  "textColor": "#231F20",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
-  "topRow": 10,
+  "topRow": 17,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "3rhcdeebf8",
-  "widgetName": "Text1Copy"
+  "widgetId": "hz04bdfbic",
+  "widgetName": "Text26CopyCopy"
 }

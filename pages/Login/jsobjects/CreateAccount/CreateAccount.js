@@ -88,12 +88,15 @@ export default {
 				try {
 					const response = await Insert_User.run(userPayload);
 					if (response) {
+						console.log("iNserverifyToken",tokenPayload);
+
 						await Insert_Verification_Token.run(tokenPayload); // Add the token to the new table
 						showAlert('User created successfully!', 'success'); // Show success message
 
 						await storeValue("signUpRightHolderName",Input3.text);
 						await storeValue("signUpRightHolderEmail",Input4.text);
 						await storeValue("emailVerifyToken",verificationToken);
+						await storeValue("rightHolderUserId",userId);
 						await closeModal(Modal1.name);
 						await showModal(Modal7.name);
 
