@@ -1,41 +1,46 @@
 {
   "animateLoading": true,
-  "backgroundColor": "{{}}",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 15,
+  "bottomRow": 16,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
     },
     {
+      "key": "fontFamily"
+    },
+    {
       "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicPropertyPathList": [
     {
-      "key": "backgroundColor"
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [],
-  "fontFamily": "System Default",
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
   "fontSize": "1rem",
   "fontStyle": "BOLD",
   "hideCard": false,
   "iconSVG": "/static/media/icon.301748e14b0306a7b94ece2d9e2c11cc.svg",
   "isDeprecated": false,
   "isLoading": false,
-  "isVisible": true,
-  "key": "0w65yeilvj",
-  "leftColumn": 54,
+  "isVisible": "{{sendOTPObject.isSendOtp}}",
+  "key": "96rawl0704",
+  "leftColumn": 10,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 4,
-  "mobileLeftColumn": 0,
-  "mobileRightColumn": 15,
-  "mobileTopRow": 0,
+  "mobileBottomRow": 13,
+  "mobileLeftColumn": 24,
+  "mobileRightColumn": 40,
+  "mobileTopRow": 9,
   "needsErrorInfo": false,
   "onCanvasUI": {
     "disableParentSelection": false,
@@ -44,15 +49,15 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 15,
-  "originalTopRow": 10,
+  "originalBottomRow": 16,
+  "originalTopRow": 12,
   "overflow": "NONE",
-  "parentColumnSpace": 2.8828125,
-  "parentId": "f041argm2i",
+  "parentColumnSpace": 12.09375,
+  "parentId": "tu12j55v4z",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 63,
+  "rightColumn": 52,
   "searchTags": [
     "typography",
     "paragraph",
@@ -63,14 +68,14 @@
     "Suggested",
     "Content"
   ],
-  "text": "إحترام الملكية الفكرية",
-  "textAlign": "RIGHT",
-  "textColor": "#ffffff",
+  "text": "Email For otp verification sent successfully, Please verify the OTP.",
+  "textAlign": "CENTER",
+  "textColor": "#ef4444",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
-  "topRow": 10,
+  "topRow": 12,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "gw174p5w2v",
-  "widgetName": "Text1Copy"
+  "widgetId": "2gfs8rqayd",
+  "widgetName": "Text28"
 }
