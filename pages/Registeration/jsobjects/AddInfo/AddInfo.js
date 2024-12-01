@@ -35,11 +35,6 @@ export default {
 		let rightHolderInfoId= this.generateUUID();
 		try{
 			if(!await this.checkExpireUser()){
-				storeValue("indentificationProff", FilePicker1.files.length > 0 ?FilePicker1.files[0].data.replace(/^data:image\/\w+;base64,/, '')
-									 : null);
-				storeValue("copyRightLetter", FilePicker2.files.length>0 ? FilePicker2.files[0].data.replace(/^data:image\/\w+;base64,/, '') : null);
-
-				storeValue("contentOwnerShip",FilePicker1Copy.files.length > 0 ?FilePicker1Copy.files[0].data.replace(/^data:image\/\w+;base64,/, '') : null);
 				await AddRightHolderInfo.run(
 					{
 						rightHolderUserId: appsmith.store.rightHolderUserId,
@@ -61,13 +56,18 @@ export default {
 					}
 				);
 				await UpdateContentOwerShip.run({
-					id: rightHolderInfoId
+					id: rightHolderInfoId,
+					contentOwnerShip:FilePicker1Copy.files.length > 0 ?FilePicker1Copy.files[0].data.replace(/^data:image\/\w+;base64,/, '') : null
+
 				})
 				await UpdateIndentificationProff.run({
-					id: rightHolderInfoId
+					id: rightHolderInfoId,
+					indentificationProff: FilePicker1.files.length > 0 ?FilePicker1.files[0].data.replace(/^data:image\/\w+;base64,/, '')
+					: null
 				})
 				await UpdateCopyRigthLetter.run({
-					id: rightHolderInfoId
+					id: rightHolderInfoId,
+					copyRightLetter: FilePicker2.files.length>0 ? FilePicker2.files[0].data.replace(/^data:image\/\w+;base64,/, '') : null
 				})
 				await removeValue("indentificationProff");
 				await removeValue("copyRightLetter");
@@ -83,7 +83,6 @@ export default {
 				setTimeout(function() {
 					navigateTo('Login', {}, 'SAME_WINDOW');
 				}, 15000);
-
 			}
 			else{
 				showAlert("Session is expire , please login again","warning");
