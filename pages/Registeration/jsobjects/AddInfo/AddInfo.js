@@ -32,8 +32,8 @@ export default {
 	},
 
 	async submitRightHolderForm(){
+		let rightHolderInfoId= this.generateUUID();
 		try{
-			let rightHolderInfoId= this.generateUUID();
 			if(!await this.checkExpireUser()){
 				storeValue("indentificationProff", FilePicker1.files.length > 0 ?FilePicker1.files[0].data.replace(/^data:image\/\w+;base64,/, '')
 									 : null);
@@ -60,15 +60,30 @@ export default {
 						updated_at: moment().format('YYYY-MM-DD HH:mm:ss')
 					}
 				);
+				await UpdateContentOwerShip.run({
+					id: rightHolderInfoId
+				})
+				await UpdateIndentificationProff.run({
+					id: rightHolderInfoId
+				})
+				await UpdateCopyRigthLetter.run({
+					id: rightHolderInfoId
+				})
+				await removeValue("indentificationProff");
+				await removeValue("copyRightLetter");
+				await removeValue("contentOwnerShip");
 
 				showAlert("form sucessfully submitted","info");
 				resetWidget(Modal1.name);
 				storeValue("rightHolderInfoId",rightHolderInfoId);
 				await showModal(Modal1Copy.name);
 				await SendEmail.run();
+
+
 				setTimeout(function() {
 					navigateTo('Login', {}, 'SAME_WINDOW');
 				}, 15000);
+
 			}
 			else{
 				showAlert("Session is expire , please login again","warning");
@@ -76,8 +91,15 @@ export default {
 			}
 		}
 		catch(ex){
+			console.log(ex.message);
+			if(ex.message !='Payload too large. File size cannot exceed 100MB.'){
+				deleteRightHolder.run({
+					id: rightHolderInfoId
+				})	
+				showAlert(`error inserting the form,Please try after some time${ex.message}`,"error");
+			}
 			console.log(ex);
-			showAlert(`error inserting the form,Please try after some time${ex.message}`,"error");
+
 		}
 	}
 }

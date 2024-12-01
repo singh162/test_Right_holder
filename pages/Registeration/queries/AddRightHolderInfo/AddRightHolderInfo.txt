@@ -12,10 +12,7 @@ INSERT INTO test_taoq_reach.rightHolderProfile (
 	country, 
 	acknowledgement, 
 	Status,
-	copyRightLetter,
-	digitalSignature, 
-	contentOwnerShip,
-	document
+	digitalSignature
 ) VALUES (
 	'{{this.params.id}}',  
 	'{{this.params.rightHolderUserId}}', 
@@ -30,8 +27,5 @@ INSERT INTO test_taoq_reach.rightHolderProfile (
 	'{{this.params.country}}', 
 	'{{this.params.acknowledgment}}', 
 	'{{this.params.status}}',
-	FROM_BASE64('{{appsmith.store.copyRightLetter}}'),
-	'{{this.params.digitalSignature}}', 
-	FROM_BASE64('{{appsmith.store.contentOwnerShip}}'),
-	FROM_BASE64('{{appsmith.store.indentificationProff}}')
+	'{{this.params.digitalSignature}}'
 );
