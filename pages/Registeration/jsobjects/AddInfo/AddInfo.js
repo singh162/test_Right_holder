@@ -69,20 +69,19 @@ export default {
 					id: rightHolderInfoId,
 					copyRightLetter: FilePicker2.files.length>0 ? FilePicker2.files[0].data.replace(/^data:image\/\w+;base64,/, '') : null
 				})
-				await removeValue("indentificationProff");
-				await removeValue("copyRightLetter");
-				await removeValue("contentOwnerShip");
+				// await removeValue("indentificationProff");
+				// await removeValue("copyRightLetter");
+				// await removeValue("contentOwnerShip");
 
 				showAlert("form sucessfully submitted","info");
 				resetWidget(Modal1.name);
 				storeValue("rightHolderInfoId",rightHolderInfoId);
-				await showModal(Modal1Copy.name);
-				await SendEmail.run();
-
-
 				setTimeout(function() {
 					navigateTo('Login', {}, 'SAME_WINDOW');
 				}, 15000);
+				await showModal(Modal1Copy.name);
+				await SendEmail.run();
+
 			}
 			else{
 				showAlert("Session is expire , please login again","warning");
