@@ -3,6 +3,7 @@ INSERT INTO test_taoq_reach.rightHolder (
 	username,
 	password_hash,
 	email,
+	expire_at,
 	inserted_at,
 	updated_at
 ) VALUES (
@@ -10,6 +11,7 @@ INSERT INTO test_taoq_reach.rightHolder (
 	'{{this.params.username}}',
 	'{{this.params.password_hash}}',
 	'{{this.params.email}}',
+	'{{this.params.expire_at}}',
 	'{{this.params.inserted_at}}',
 	'{{this.params.updated_at}}'
 );
