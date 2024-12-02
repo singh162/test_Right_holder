@@ -17,7 +17,10 @@ export default {
 			this.rightHolderData = (await getRightHolder.run({ id: rightHolder_id }))[0];
 
 			// Check if the token has expired
-			if (moment().isBefore(expire_at)) {
+			let currentTime= moment().format('YYYY-MM-DD HH:mm:ss');
+			const expireAt = moment.utc(expire_at).format('YYYY-MM-DD HH:mm:ss'); 
+			console.log("asdada",currentTime,expireAt);
+			if (`${new Date(currentTime).getTime()}`< `${new Date(expireAt).getTime()}`) {
 				console.log("user_id", rightHolder_id, rightHolder_id);
 
 				// Update the user record to mark the email as verified
