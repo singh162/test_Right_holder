@@ -5,12 +5,12 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT count(*) as count FROM complaint_status Inner JOIN complaints_form on complaint_status.complaint_form_id = complaints_form.complaint_form_id\nWHERE  complaints_form.rightHolderUserId = '{{appsmith.store.rightHolderUserId}}'  ",
+      "body": "SELECT count(*) as count FROM complaint_status Inner JOIN complaints_form on complaint_status.complaint_form_id = complaints_form.complaint_form_id\nWHERE  complaints_form.rightHolderUserId = '{{appsmith.store.rightHolderUserId}}' and complaints_form.infringing_url like '%{{Table1.searchText || \"\"}}%' ",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ],
       "timeoutInMillisecond": 10000
