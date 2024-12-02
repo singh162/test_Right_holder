@@ -53,7 +53,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "",
+  "onClick": "{{showModal(OpenFileImageProofCopyCopy.name);}}",
   "originalBottomRow": 91,
   "originalTopRow": 79,
   "parentColumnSpace": 16.052734375,
