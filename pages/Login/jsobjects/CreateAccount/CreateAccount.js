@@ -58,7 +58,7 @@ export default {
 			await Verify_Recaptha.run();
 			const verificationToken = this.generateUUID(); 
 			// Prepare the payload for the insert operation
-			this.exitQuery = `SELECT id FROM test_taoq_reach.rightHolder WHERE email = '${Input4.text}' or username ='${Input3.text}'`;
+			this.exitQuery = `SELECT id FROM test_taoq_reach.rightHolder WHERE email = '${Input4.text}'`;
 
 			const verificationExpires = moment().add(2, 'hours').format('YYYY-MM-DD HH:mm:ss');
 
@@ -109,7 +109,7 @@ export default {
 				}
 			}
 			else{
-				showAlert('User already created, try different EmailAddress or userName', 'warning'); // Show success message
+				showAlert('User already created, try different EmailAddress', 'warning'); // Show success message
 				await closeModal(Modal1.name);
 				await resetWidget(Modal1.name);
 			}
