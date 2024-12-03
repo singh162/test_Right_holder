@@ -35,7 +35,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{navigateTo('Login', {}, 'SAME_WINDOW');}}",
+  "onClick": "{{signOut.signOut();}}",
   "parentColumnSpace": 15.734375,
   "parentId": "7u2snhrzg7",
   "parentRowSpace": 10,
