@@ -61,8 +61,8 @@ Hi Online Antipiracy Team,
 
 <p>For your convenience, you can click the link below to access the Dashboard directly:</p>
 
-<p><a href="https://saip.bytes.care/app/saip-test/dashboard-66fe3a8daf2b8e5a2a63fc02?branch=master" target="_blank">
-https://saip.bytes.care/app/saip-test/dashboard-66fe3a8daf2b8e5a2a63fc02?branch=master
+<p><a href="https://saip.bytes.care/app/saip-test/rightsholder-approval-66fe3a8daf2b8e5a2a63fc02?branch=master" target="_blank">
+https://saip.bytes.care/app/saip-test/rightsholder-approval-66fe3a8daf2b8e5a2a63fc02?branch=master
 </a></p>
 
 

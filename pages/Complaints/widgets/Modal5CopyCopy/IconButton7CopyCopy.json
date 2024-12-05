@@ -1,13 +1,11 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 127,
+  "bottomRow": 4,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-  "buttonStyle": "PRIMARY",
-  "buttonVariant": "SECONDARY",
-  "disabledWhenInvalid": false,
-  "displayName": "Button",
+  "buttonVariant": "TERTIARY",
+  "displayName": "Icon button",
   "dynamicBindingPathList": [
     {
       "key": "buttonColor"
@@ -22,19 +20,20 @@
     }
   ],
   "hideCard": false,
-  "iconSVG": "/static/media/icon.7a418b9e1899a550d7e8f33b48cbde12.svg",
-  "isDefaultClickDisabled": true,
+  "iconName": "cross",
+  "iconSVG": "/static/media/icon.e5045469a82b76384d0c537fc9545012.svg",
+  "iconSize": 24,
   "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "tq5cr2jltz",
-  "leftColumn": 21,
-  "minWidth": 120,
-  "mobileBottomRow": 22,
-  "mobileLeftColumn": 31,
-  "mobileRightColumn": 47,
-  "mobileTopRow": 18,
+  "key": "qmxrer6rtg",
+  "leftColumn": 62,
+  "minWidth": 50,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 58,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 0,
   "needsErrorInfo": false,
   "onCanvasUI": {
     "disableParentSelection": false,
@@ -43,16 +42,11 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{closeModal(Modal3.name);}}",
-  "originalBottomRow": 127,
-  "originalTopRow": 123,
-  "parentId": "kwaf34scgz",
-  "placement": "CENTER",
-  "recaptchaType": "V3",
+  "onClick": "{{closeModal(Modal5CopyCopy.name);}}",
+  "parentId": "heb1s7uc5p",
   "renderMode": "CANVAS",
-  "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 37,
+  "rightColumn": 64,
   "searchTags": [
     "click",
     "submit"
@@ -60,11 +54,10 @@
   "tags": [
     "Buttons"
   ],
-  "text": "Close",
-  "thumbnailSVG": "/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
-  "topRow": 123,
-  "type": "BUTTON_WIDGET",
+  "thumbnailSVG": "/static/media/thumbnail.b02b764a52db45d332efa723178a50a4.svg",
+  "topRow": 0,
+  "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "gsmyrupdjz",
-  "widgetName": "Button7"
+  "widgetId": "677ae7cp3j",
+  "widgetName": "IconButton7CopyCopy"
 }

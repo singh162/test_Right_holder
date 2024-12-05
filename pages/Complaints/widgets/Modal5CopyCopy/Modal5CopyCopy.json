@@ -1,14 +1,14 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 129,
+  "bottomRow": 1011,
   "boxShadow": "none",
   "canEscapeKeyClose": true,
   "canOutsideClickClose": true,
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1290,
+      "bottomRow": 920,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -28,11 +28,11 @@
       "isDisabled": false,
       "isLoading": false,
       "isVisible": true,
-      "key": "axk0nyb3hs",
+      "key": "rg8hahywk4",
       "leftColumn": 0,
       "maxDynamicHeight": 9000,
       "minDynamicHeight": 4,
-      "minHeight": 990,
+      "minHeight": 380,
       "minWidth": 450,
       "mobileBottomRow": 0,
       "mobileLeftColumn": 0,
@@ -47,7 +47,7 @@
         "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
       },
       "parentColumnSpace": 1,
-      "parentId": "f5jof22ggq",
+      "parentId": "pdn4n8xz8m",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -56,8 +56,8 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "kwaf34scgz",
-      "widgetName": "Canvas17"
+      "widgetId": "heb1s7uc5p",
+      "widgetName": "Canvas19CopyCopy"
     }
   ],
   "detachFromLayout": true,
@@ -68,17 +68,16 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "height": 1290,
+  "height": 920,
   "hideCard": false,
   "iconSVG": "/static/media/icon.47fe8500526372db96cb58a82187ffeb.svg",
   "isCanvas": true,
   "isDeprecated": false,
   "isLoading": false,
-  "key": "p1gbdzcoc6",
+  "key": "w2dchfgy07",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 24,
-  "minHeight": 1290,
   "mobileBottomRow": 0,
   "mobileLeftColumn": 0,
   "mobileRightColumn": 0,
@@ -106,10 +105,10 @@
     "Layout"
   ],
   "thumbnailSVG": "/static/media/thumbnail.c20e144182d9af35cde59e39d9afe632.svg",
-  "topRow": 0,
+  "topRow": 91,
   "type": "MODAL_WIDGET",
   "version": 2,
-  "widgetId": "f5jof22ggq",
-  "widgetName": "Modal3",
-  "width": 678
+  "widgetId": "pdn4n8xz8m",
+  "widgetName": "Modal5CopyCopy",
+  "width": 888
 }

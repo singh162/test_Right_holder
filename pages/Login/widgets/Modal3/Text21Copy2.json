@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 99,
+  "bottomRow": 98,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -41,8 +41,8 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 99,
-  "originalTopRow": 92,
+  "originalBottomRow": 94,
+  "originalTopRow": 87,
   "overflow": "NONE",
   "parentColumnSpace": 10.40625,
   "parentId": "ryykn3b15m",
@@ -60,11 +60,11 @@
     "Suggested",
     "Content"
   ],
-  "text": "Please Upload Content Ownership Certificate",
+  "text": "Please Upload Copyright / Trademark / Ownership Document ",
   "textAlign": "LEFT",
   "textColor": "#a9a7a7",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
-  "topRow": 92,
+  "topRow": 87,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

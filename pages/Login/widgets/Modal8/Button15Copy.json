@@ -56,8 +56,8 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onClick": "{{sendOTPObject.verifyOtp();}}",
-  "originalBottomRow": 28,
-  "originalTopRow": 24,
+  "originalBottomRow": 26,
+  "originalTopRow": 22,
   "parentId": "tu12j55v4z",
   "placement": "CENTER",
   "recaptchaType": "V3",
