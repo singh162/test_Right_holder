@@ -60,11 +60,11 @@
     "Suggested",
     "Content"
   ],
-  "text": "Please Upload Content Ownership Certificate  <span style=\"color: red;\">*</span>",
+  "text": "Please Upload Copyright / Trademark / Ownership Document  <span style=\"color: red;\">*</span>",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
-  "topRow": 82,
+  "topRow": 80,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
