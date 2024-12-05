@@ -4,9 +4,8 @@
   "bottomRow": 11,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-  "buttonVariant": "PRIMARY",
-  "disabledWhenInvalid": false,
-  "displayName": "Button",
+  "buttonVariant": "TERTIARY",
+  "displayName": "Icon button",
   "dynamicBindingPathList": [
     {
       "key": "buttonColor"
@@ -15,30 +14,25 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
     }
   ],
   "hideCard": false,
-  "iconSVG": "/static/media/icon.7a418b9e1899a550d7e8f33b48cbde12.svg",
-  "isDefaultClickDisabled": true,
+  "iconName": "filter-open",
+  "iconSVG": "/static/media/icon.e5045469a82b76384d0c537fc9545012.svg",
   "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "dki1c1r0ca",
-  "leftColumn": 2,
-  "minWidth": 120,
-  "mobileBottomRow": 6,
-  "mobileLeftColumn": 34,
-  "mobileRightColumn": 50,
-  "mobileTopRow": 2,
+  "key": "982vssakv2",
+  "leftColumn": 53,
+  "minWidth": 50,
+  "mobileBottomRow": 13,
+  "mobileLeftColumn": 50,
+  "mobileRightColumn": 54,
+  "mobileTopRow": 9,
   "needsErrorInfo": false,
   "onCanvasUI": {
     "disableParentSelection": false,
@@ -47,16 +41,15 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{downloadTitleObject.downloadXlsx();}}",
-  "parentColumnSpace": 13.733183860778809,
+  "onClick": "{{showModal(Modal15Copy.name);}}",
+  "originalBottomRow": 15,
+  "originalTopRow": 11,
+  "parentColumnSpace": 13.449918508529663,
   "parentId": "dbwdh2qc56",
   "parentRowSpace": 10,
-  "placement": "CENTER",
-  "recaptchaType": "V3",
   "renderMode": "CANVAS",
-  "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 11,
+  "rightColumn": 57,
   "searchTags": [
     "click",
     "submit"
@@ -64,11 +57,11 @@
   "tags": [
     "Buttons"
   ],
-  "text": "Download",
-  "thumbnailSVG": "/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
+  "thumbnailSVG": "/static/media/thumbnail.b02b764a52db45d332efa723178a50a4.svg",
+  "tooltip": "Open Filter",
   "topRow": 7,
-  "type": "BUTTON_WIDGET",
+  "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "vcowhc9szt",
-  "widgetName": "Button23"
+  "widgetId": "5xgwsk2msa",
+  "widgetName": "IconButton21Copy"
 }
