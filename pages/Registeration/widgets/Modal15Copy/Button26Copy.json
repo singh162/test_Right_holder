@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 45,
+  "bottomRow": 22,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonStyle": "PRIMARY",
@@ -16,6 +16,11 @@
       "key": "borderRadius"
     }
   ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -28,8 +33,8 @@
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "hge8xfob56",
-  "leftColumn": 45,
+  "key": "87gw11osju",
+  "leftColumn": 31,
   "minWidth": 120,
   "mobileBottomRow": 22,
   "mobileLeftColumn": 31,
@@ -43,14 +48,14 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{closeModal(Modal8.name);}}",
-  "parentId": "3s6rz4ggmk",
+  "onClick": "{{showModal(Modal8.name);\nresetWidget(\"Select4Copy1\", true);\nresetWidget(\"Select4CopyCopy\", true);\nresetWidget(\"Input16Copy\", true);}}",
+  "parentId": "va2gzwuxra",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 61,
+  "rightColumn": 47,
   "searchTags": [
     "click",
     "submit"
@@ -60,9 +65,9 @@
   ],
   "text": "Close",
   "thumbnailSVG": "/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
-  "topRow": 41,
+  "topRow": 18,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "v6ved9d60l",
-  "widgetName": "Button13"
+  "widgetId": "okcar376u0",
+  "widgetName": "Button26Copy"
 }

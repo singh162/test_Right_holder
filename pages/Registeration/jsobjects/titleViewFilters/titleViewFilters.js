@@ -12,7 +12,7 @@ export default {
 			await countTitles.run();
 
 			// Reset widgets and close modal
-			closeModal(Modal15Copy.name);
+			showModal(Modal8.name);
 			resetWidget("Select4Copy1", true);
 			resetWidget("Select4CopyCopy", true);
 			resetWidget("Input16Copy", true);

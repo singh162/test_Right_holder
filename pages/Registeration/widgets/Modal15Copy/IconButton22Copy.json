@@ -1,13 +1,11 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 45,
+  "bottomRow": 4,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-  "buttonStyle": "PRIMARY",
-  "buttonVariant": "SECONDARY",
-  "disabledWhenInvalid": false,
-  "displayName": "Button",
+  "buttonVariant": "TERTIARY",
+  "displayName": "Icon button",
   "dynamicBindingPathList": [
     {
       "key": "buttonColor"
@@ -16,25 +14,31 @@
       "key": "borderRadius"
     }
   ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
     }
   ],
   "hideCard": false,
-  "iconSVG": "/static/media/icon.7a418b9e1899a550d7e8f33b48cbde12.svg",
-  "isDefaultClickDisabled": true,
+  "iconName": "cross",
+  "iconSVG": "/static/media/icon.e5045469a82b76384d0c537fc9545012.svg",
+  "iconSize": 24,
   "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "hge8xfob56",
-  "leftColumn": 45,
-  "minWidth": 120,
-  "mobileBottomRow": 22,
-  "mobileLeftColumn": 31,
-  "mobileRightColumn": 47,
-  "mobileTopRow": 18,
+  "key": "p3r9nxt6by",
+  "leftColumn": 58,
+  "minWidth": 50,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 58,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 0,
   "needsErrorInfo": false,
   "onCanvasUI": {
     "disableParentSelection": false,
@@ -43,14 +47,11 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{closeModal(Modal8.name);}}",
-  "parentId": "3s6rz4ggmk",
-  "placement": "CENTER",
-  "recaptchaType": "V3",
+  "onClick": "{{showModal(Modal8.name);\nresetWidget(\"Select4Copy1\", true);\nresetWidget(\"Select4CopyCopy\", true);\nresetWidget(\"Input16Copy\", true);}}",
+  "parentId": "va2gzwuxra",
   "renderMode": "CANVAS",
-  "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 61,
+  "rightColumn": 64,
   "searchTags": [
     "click",
     "submit"
@@ -58,11 +59,10 @@
   "tags": [
     "Buttons"
   ],
-  "text": "Close",
-  "thumbnailSVG": "/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
-  "topRow": 41,
-  "type": "BUTTON_WIDGET",
+  "thumbnailSVG": "/static/media/thumbnail.b02b764a52db45d332efa723178a50a4.svg",
+  "topRow": 0,
+  "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "v6ved9d60l",
-  "widgetName": "Button13"
+  "widgetId": "9mgerml8cs",
+  "widgetName": "IconButton22Copy"
 }
