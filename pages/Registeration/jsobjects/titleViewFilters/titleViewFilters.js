@@ -7,15 +7,14 @@ export default {
 			this.whereFilter = ` and ${where}`;
 
 			// Fetch data with the updated filter
+			await countTitles.run();
 			let data = await getTitlesServerFilters.run();
 			viewTitlesObject.titleData = data;
-			await countTitles.run();
-
 			// Reset widgets and close modal
 			showModal(Modal8.name);
-			resetWidget("Select4Copy1", true);
-			resetWidget("Select4CopyCopy", true);
-			resetWidget("Input16Copy", true);
+			// resetWidget("Select4Copy1", true);
+			// resetWidget("Select4CopyCopy", true);
+			// resetWidget("Input16Copy", true);
 		} catch (error) {
 			console.error("Error in filtersObject:", error);
 			showAlert("An error occurred while applying filters. Please try again.", "error");
@@ -27,9 +26,9 @@ export default {
 			this.whereFilter = '';
 
 			// Fetch data without filters
+			await countTitles.run();
 			let data = await getTitlesServerFilters.run();
 			viewTitlesObject.titleData = data;
-			await countTitles.run();
 
 			// Reset widgets
 			resetWidget("Select4Copy1", true);

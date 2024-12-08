@@ -10,13 +10,12 @@ export default {
 			console.log("where", where);
 
 			this.whereFilter = ` and ${where}`;
-
-			await GetViewComplaintStatus.run();
 			await countViewComplaintStatus.run();
+			await GetViewComplaintStatus.run();
 			closeModal(Modal15.name);
-			resetWidget("Select4", true);
-			resetWidget("Select4Copy", true);
-			resetWidget("Input16", true);
+			// resetWidget("Select4", true);
+			// resetWidget("Select4Copy", true);
+			// resetWidget("Input16", true);
 		} catch (error) {
 			console.error("Error in filtersObject:", error);
 			showAlert("Failed to apply filters. Please try again.", "error");
@@ -25,9 +24,8 @@ export default {
 	async clearFilter() {
 		try {
 			this.whereFilter = "";
-
-			await GetViewComplaintStatus.run();
 			await countViewComplaintStatus.run();
+			await GetViewComplaintStatus.run();
 			resetWidget("Select4", true);
 			resetWidget("Select4Copy", true);
 			resetWidget("Input16", true);

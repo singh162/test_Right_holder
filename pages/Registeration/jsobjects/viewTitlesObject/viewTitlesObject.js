@@ -8,8 +8,8 @@ export default {
 	},
 	async mappTitleData() {
 		// Fetch the default title data from the server
-		let data = await getTitlesServerFilters.run();
 		await countTitles.run();
+		let data = await getTitlesServerFilters.run();
 		// If no search text is provided, use the default data
 		if (Table1.searchText === '') {
 			this.titleData = data;
