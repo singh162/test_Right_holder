@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 90,
+  "bottomRow": 48,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonStyle": "PRIMARY",
@@ -28,7 +28,7 @@
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "qv7074012s",
+  "key": "5b4yma8ez4",
   "leftColumn": 46,
   "minWidth": 120,
   "mobileBottomRow": 22,
@@ -43,8 +43,8 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{closeModal(Modal5Copy.name).then(() => {\n  showModal(Modal3.name);\n});}}",
-  "parentId": "3twii71a85",
+  "onClick": "{{closeModal(Modal17.name).then(() => {\n  showModal(Modal3.name);\n});}}",
+  "parentId": "d7fjwmrhj7",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
@@ -60,9 +60,9 @@
   ],
   "text": "Close",
   "thumbnailSVG": "/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
-  "topRow": 86,
+  "topRow": 44,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "xmaii1iiuv",
-  "widgetName": "Button9Copy"
+  "widgetId": "qnfzxbowno",
+  "widgetName": "Button29"
 }

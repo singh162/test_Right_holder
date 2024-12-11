@@ -37,7 +37,7 @@ export default {
 			for (let i = 0; i < ListTitles.titleList.length; i++) {
 				const id = this.generateUUID();
 				const titleItem = ListTitles.titleList[i];
-				console.log("titleItem",titleItem);
+		
 				// Check if FilePicker2 exists and has data
 				if (!titleItem.FilePicker2 || !titleItem.FilePicker2.length || !titleItem.FilePicker2[0].data) {
 					showAlert("Invalid image data format for title: " + titleItem.titleName, "error");
@@ -51,13 +51,7 @@ export default {
 					continue; // Skip to the next title
 				}
 
-				// Log ownershipImage information for debugging
-				console.log("Ownership Image Base64 Data for title:", titleItem.titleName, base64Data);
-
-				console.log({
-					name: titleItem.titleName,
-					ownershipImage: base64Data, // Keep it as is
-				});
+		
 				// Insert the record into the database
 				await insertComplaintTiles.run({
 					id: id,

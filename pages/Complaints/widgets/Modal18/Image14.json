@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 86,
+  "bottomRow": 52,
   "boxShadow": "none",
   "defaultImage": "https://assets.appsmith.com/widgets/default.png",
   "displayName": "Image",
@@ -19,20 +19,20 @@
   "flexVerticalAlignment": "start",
   "hideCard": false,
   "iconSVG": "/static/media/icon.fdb987a7ceacf7001426460138f7cd09.svg",
-  "image": "{{GetRightHolderInfo.data[0].contentOwnerShip}}",
+  "image": "{{\"data:image/;base64,\"+GetRightHolderInfo.data[0].document.split(',')}}",
   "imageShape": "RECTANGLE",
   "isDeprecated": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "7ml5iwxof2",
-  "leftColumn": 2,
+  "key": "ch1jz5o728",
+  "leftColumn": 3,
   "maxZoomLevel": 1,
-  "mobileBottomRow": 15,
+  "mobileBottomRow": 17,
   "mobileLeftColumn": 22,
   "mobileRightColumn": 34,
-  "mobileTopRow": 3,
+  "mobileTopRow": 5,
   "needsErrorInfo": false,
-  "objectFit": "contain",
+  "objectFit": "cover",
   "onCanvasUI": {
     "disableParentSelection": false,
     "focusBGCSSVar": "--on-canvas-ui-widget-focus",
@@ -40,11 +40,11 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "parentColumnSpace": 9.65625,
-  "parentId": "3twii71a85",
+  "parentColumnSpace": 6.9375,
+  "parentId": "sey9m9dc6r",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 62,
+  "rightColumn": 61,
   "tags": [
     "Media"
   ],
@@ -52,6 +52,6 @@
   "topRow": 5,
   "type": "IMAGE_WIDGET",
   "version": 1,
-  "widgetId": "w17tcf1hmx",
-  "widgetName": "Image4Copy"
+  "widgetId": "3akw0njfzf",
+  "widgetName": "Image14"
 }

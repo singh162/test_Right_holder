@@ -27,8 +27,8 @@
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "qmxrer6rtg",
-  "leftColumn": 62,
+  "key": "eqw16ya3kl",
+  "leftColumn": 58,
   "minWidth": 50,
   "mobileBottomRow": 4,
   "mobileLeftColumn": 58,
@@ -42,8 +42,8 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{closeModal(Modal5CopyCopy.name);}}",
-  "parentId": "heb1s7uc5p",
+  "onClick": "{{closeModal(Modal18.name).then(() => {\n  showModal(Modal3.name);\n});}}",
+  "parentId": "sey9m9dc6r",
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
   "rightColumn": 64,
@@ -58,6 +58,6 @@
   "topRow": 0,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "677ae7cp3j",
-  "widgetName": "IconButton7CopyCopy"
+  "widgetId": "iwuhu7ab5l",
+  "widgetName": "IconButton27"
 }

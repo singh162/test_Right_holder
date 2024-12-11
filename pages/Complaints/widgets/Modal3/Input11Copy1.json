@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 86,
+  "bottomRow": 85,
   "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
   "defaultText": "{{GetRightHolderInfo.data[0].reasonStatus ?GetRightHolderInfo.data[0].reasonStatus : \"\" }}",
   "displayName": "Input",
@@ -81,7 +81,7 @@
     "Inputs"
   ],
   "thumbnailSVG": "/static/media/thumbnail.a4eac1a16753ea7fc54cac7731f9ea6a.svg",
-  "topRow": 79,
+  "topRow": 78,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "mpr7ts8ecy",

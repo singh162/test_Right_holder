@@ -1,14 +1,14 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 1011,
+  "bottomRow": 580,
   "boxShadow": "none",
   "canEscapeKeyClose": true,
   "canOutsideClickClose": true,
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 920,
+      "bottomRow": 580,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -28,11 +28,11 @@
       "isDisabled": false,
       "isLoading": false,
       "isVisible": true,
-      "key": "rg8hahywk4",
+      "key": "immg7mlbfi",
       "leftColumn": 0,
       "maxDynamicHeight": 9000,
       "minDynamicHeight": 4,
-      "minHeight": 380,
+      "minHeight": 580,
       "minWidth": 450,
       "mobileBottomRow": 0,
       "mobileLeftColumn": 0,
@@ -47,7 +47,7 @@
         "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
       },
       "parentColumnSpace": 1,
-      "parentId": "l3jzyors55",
+      "parentId": "5hswmroceb",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -56,8 +56,8 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "3twii71a85",
-      "widgetName": "Canvas19Copy"
+      "widgetId": "sey9m9dc6r",
+      "widgetName": "Canvas128"
     }
   ],
   "detachFromLayout": true,
@@ -68,13 +68,13 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "height": 920,
+  "height": 580,
   "hideCard": false,
   "iconSVG": "/static/media/icon.47fe8500526372db96cb58a82187ffeb.svg",
   "isCanvas": true,
   "isDeprecated": false,
   "isLoading": false,
-  "key": "w2dchfgy07",
+  "key": "kp8sh43ycx",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 24,
@@ -105,10 +105,10 @@
     "Layout"
   ],
   "thumbnailSVG": "/static/media/thumbnail.c20e144182d9af35cde59e39d9afe632.svg",
-  "topRow": 91,
+  "topRow": 0,
   "type": "MODAL_WIDGET",
   "version": 2,
-  "widgetId": "l3jzyors55",
-  "widgetName": "Modal5Copy",
-  "width": 888
+  "widgetId": "5hswmroceb",
+  "widgetName": "Modal18",
+  "width": 848
 }

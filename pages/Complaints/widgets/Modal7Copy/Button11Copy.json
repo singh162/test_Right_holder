@@ -44,8 +44,8 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onClick": "{{closeModal(Modal7Copy.name);}}",
-  "originalBottomRow": 40,
-  "originalTopRow": 36,
+  "originalBottomRow": 38,
+  "originalTopRow": 34,
   "parentId": "tm1ck2lzey",
   "placement": "CENTER",
   "recaptchaType": "V3",

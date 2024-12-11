@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 113,
+  "bottomRow": 118,
   "boxShadow": "none",
   "defaultImage": "https://assets.appsmith.com/widgets/default.png",
   "displayName": "Image",
@@ -13,7 +13,6 @@
       "key": "image"
     }
   ],
-  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -24,20 +23,20 @@
   "flexVerticalAlignment": "start",
   "hideCard": false,
   "iconSVG": "/static/media/icon.fdb987a7ceacf7001426460138f7cd09.svg",
-  "image": "{{GetRightHolderInfo.data[0].document}}",
+  "image": "{{\"data:image/;base64,\"+GetRightHolderInfo.data[0].document.split(',')}}",
   "imageShape": "RECTANGLE",
   "isDeprecated": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "fragj80r0q",
-  "leftColumn": 32,
+  "key": "ch1jz5o728",
+  "leftColumn": 31,
   "maxZoomLevel": 1,
-  "mobileBottomRow": 102,
-  "mobileLeftColumn": 9,
-  "mobileRightColumn": 21,
-  "mobileTopRow": 90,
+  "mobileBottomRow": 118,
+  "mobileLeftColumn": 31,
+  "mobileRightColumn": 43,
+  "mobileTopRow": 106,
   "needsErrorInfo": false,
-  "objectFit": "contain",
+  "objectFit": "cover",
   "onCanvasUI": {
     "disableParentSelection": false,
     "focusBGCSSVar": "--on-canvas-ui-widget-focus",
@@ -45,21 +44,19 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{showModal(Modal4.name).then(() => {\n  showModal(Modal3.name);\n});}}",
-  "originalBottomRow": 87,
-  "originalTopRow": 81,
-  "parentColumnSpace": 6.9375,
+  "onClick": "{{showModal(Modal18.name);}}",
+  "parentColumnSpace": 10.40625,
   "parentId": "kwaf34scgz",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 42,
+  "rightColumn": 43,
   "tags": [
     "Media"
   ],
   "thumbnailSVG": "/static/media/thumbnail.74089bb21dfcb5890f6b106f93c3b9c8.svg",
-  "topRow": 107,
+  "topRow": 106,
   "type": "IMAGE_WIDGET",
   "version": 1,
-  "widgetId": "40p2rh33jy",
-  "widgetName": "Image1"
+  "widgetId": "k7apgwliid",
+  "widgetName": "Image11"
 }
