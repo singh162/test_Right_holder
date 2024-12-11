@@ -16,7 +16,7 @@ export default {
 			let exitsAccessToken= await checkAccessTokenExits.run({user_id: appsmith.store.rightHolderUserId});
 
 			if(exitsAccessToken && exitsAccessToken.length >0){
-				console.log("verifyToken",exitsAccessToken);
+
 				await updateVerifyToken.run({
 					user_id: appsmith.store.rightHolderUserId,
 					token: verificationToken
@@ -24,7 +24,6 @@ export default {
 			}
 			else
 			{
-				console.log("iNserverifyToken",exitsAccessToken);
 
 				const tokenPayload = {
 					id: verifyId,

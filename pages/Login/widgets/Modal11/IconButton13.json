@@ -1,12 +1,11 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 24,
+  "bottomRow": 4,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-  "buttonVariant": "PRIMARY",
-  "disabledWhenInvalid": false,
-  "displayName": "Button",
+  "buttonVariant": "TERTIARY",
+  "displayName": "Icon button",
   "dynamicBindingPathList": [
     {
       "key": "buttonColor"
@@ -15,26 +14,26 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
     }
   ],
   "hideCard": false,
-  "iconSVG": "/static/media/icon.7a418b9e1899a550d7e8f33b48cbde12.svg",
-  "isDefaultClickDisabled": true,
+  "iconName": "cross",
+  "iconSVG": "/static/media/icon.e5045469a82b76384d0c537fc9545012.svg",
+  "iconSize": 24,
   "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "exyik1uzsi",
-  "leftColumn": 34,
-  "minWidth": 120,
-  "mobileBottomRow": 25,
-  "mobileLeftColumn": 29,
-  "mobileRightColumn": 45,
-  "mobileTopRow": 21,
+  "key": "pl6h6ccwvk",
+  "leftColumn": 58,
+  "minWidth": 50,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 58,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 0,
   "needsErrorInfo": false,
   "onCanvasUI": {
     "disableParentSelection": false,
@@ -43,18 +42,11 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{closeModal(Modal2.name);}}",
-  "originalBottomRow": 24,
-  "originalTopRow": 20,
-  "parentColumnSpace": 11.71875,
-  "parentId": "87c2trxkqw",
-  "parentRowSpace": 10,
-  "placement": "CENTER",
-  "recaptchaType": "V3",
+  "onClick": "{{closeModal(Modal11.name).then(() => {\n  showModal(Modal3Copy.name);\n});}}",
+  "parentId": "wff5z7lu2r",
   "renderMode": "CANVAS",
-  "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 42,
+  "rightColumn": 64,
   "searchTags": [
     "click",
     "submit"
@@ -62,11 +54,10 @@
   "tags": [
     "Buttons"
   ],
-  "text": "No",
-  "thumbnailSVG": "/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
-  "topRow": 20,
-  "type": "BUTTON_WIDGET",
+  "thumbnailSVG": "/static/media/thumbnail.b02b764a52db45d332efa723178a50a4.svg",
+  "topRow": 0,
+  "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "raromfvjlf",
-  "widgetName": "Button6"
+  "widgetId": "xlpvpwfr20",
+  "widgetName": "IconButton13"
 }

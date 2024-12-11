@@ -42,9 +42,9 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{GetRightHolderInfo.run().then(() => {\n  showModal(Modal3.name);\n});}}",
-  "originalBottomRow": 10,
-  "originalTopRow": 6,
+  "onClick": "{{GetRightHolderInfo.run().then(() => {\n  showModal(Modal3Copy.name);\n});}}",
+  "originalBottomRow": 24,
+  "originalTopRow": 20,
   "parentColumnSpace": 11.71875,
   "parentId": "87c2trxkqw",
   "parentRowSpace": 10,

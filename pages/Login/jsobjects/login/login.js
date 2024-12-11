@@ -42,7 +42,7 @@ export default {
     WHERE (email = '${Input1.text}')
     AND password_hash = '${hashedPassword}'
 `;
-				console.log(	this.signInQuery );
+
 				let data = await signInRightHolder.run();
 				if(data && data.length >0){
 					storeValue("rightHolderUserId",data[0].id);

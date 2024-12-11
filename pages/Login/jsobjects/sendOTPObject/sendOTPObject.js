@@ -28,14 +28,14 @@ export default {
 			let rightHolderExits =  await OtpExitsRightHolder.run({email:Input14.text});
 			if(rightHolderExits && rightHolderExits.length>0){
 				// Generate a random 4-digit OTP
-				console.log("rightHolderExits[0].username",rightHolderExits[0].username);
+
 				storeValue("otpRightHolderName",rightHolderExits[0].username);
 				const otp = Math.floor(1000 + Math.random() * 9000);
-				console.log("otp",otp)
+
 				storeValue("resetStoreValue",otp);
 				// Check if OTP already exists for the given email
 				const otpData = await getResetOtp.run({ email: Input14.text });
-				console.log(otpData)
+
 				// Create insert object for a new OTP
 				let insertObject = {
 					id: this.generateUUID(),
@@ -107,13 +107,10 @@ export default {
 			const currentTime = moment().format('YYYY-MM-DD HH:mm:ss');
 
 			// Debugging logs
-			console.log("otpData:", otpData);
-			console.log("expireAt (UTC):", expireAt);
-			console.log("currentTime (UTC):", currentTime);
 
-			// Compare times
-			console.log(new Date(currentTime).getTime());
-			console.log(new Date(expireAt).getTime());
+
+
+
 
 			if (`${new Date(currentTime).getTime()}`> `${new Date(expireAt).getTime()}`) {
 				await deleteResetOtp.run({ email: Input14.text }); // Optionally, delete expired OTP record
@@ -124,7 +121,7 @@ export default {
 				resetWidget("Input15Copy", true);	resetWidget("Input15Copy1", true);	resetWidget("Input15Copy2", true);
 				return; // Stop further execution if OTP is expired
 			}
-			console.log("otpData",enteredOtp);
+
 			// Check if OTP matches
 			if (otpData[0].otp === parseInt(enteredOtp)) {
 				showAlert("OTP verified successfully!", "success");

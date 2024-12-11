@@ -88,7 +88,7 @@ export default {
 				try {
 					const response = await Insert_User.run(userPayload);
 					if (response) {
-						console.log("iNserverifyToken",tokenPayload);
+
 
 						await Insert_Verification_Token.run(tokenPayload); // Add the token to the new table
 						showAlert('User created successfully!', 'success'); // Show success message
