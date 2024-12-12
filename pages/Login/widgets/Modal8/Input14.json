@@ -67,7 +67,7 @@
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 45,
+  "rightColumn": 48,
   "searchTags": [
     "form",
     "text input",
