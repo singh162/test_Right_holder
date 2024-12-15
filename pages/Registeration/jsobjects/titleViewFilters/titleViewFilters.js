@@ -43,27 +43,51 @@ export default {
 	async applyCondition(field, condition, value) {
 		try {
 			let whereClause;
+			let tableName="complaints_title";
 			switch (condition) {
 				case 'Contains':
-					whereClause = `complaints_title.${field} LIKE '%${value}%'`;
+					whereClause = `${tableName}.${field} LIKE '%${value}%'`;
 					break;
 				case 'Does Not Contain':
-					whereClause = `complaints_title.${field} NOT LIKE '%${value}%'`;
+					whereClause = `${tableName}.${field} NOT LIKE '%${value}%'`;
 					break;
 				case 'Starts With':
-					whereClause = `complaints_title.${field} LIKE '${value}%'`;
+					whereClause = `${tableName}.${field} LIKE '${value}%'`;
 					break;
 				case 'Ends With':
-					whereClause = `complaints_title.${field} LIKE '%${value}'`;
+					whereClause = `${tableName}.${field} LIKE '%${value}'`;
 					break;
 				case 'Is Exactly':
-					whereClause = `complaints_title.${field} = '${value}'`;
+					whereClause = `${tableName}.${field} = '${value}'`;
 					break;
 				case 'Empty':
-					whereClause = `complaints_title.${field} = ''`;
+					whereClause = `${tableName}.${field} = ''`;
 					break;
 				case 'Not Empty':
-					whereClause = `complaints_title.${field} != ''`;
+					whereClause = `${tableName}.${field} != ''`;
+					break;
+				case 'Equals':
+					if(field === "inserted_at"){
+						whereClause = `${tableName}.${field} = '${moment.utc(DatePicker1Copy1.formattedDate).format('YYYY-MM-DD HH:mm:ss')}'`;
+					}
+					else{
+						whereClause = `${tableName}.${field} = '${value}'`;
+					}
+					break;
+				case 'Greater Than':
+					whereClause = `${tableName}.${field} > '${moment.utc(DatePicker1Copy1.formattedDate).format('YYYY-MM-DD HH:mm:ss')}'`;
+					break;
+				case 'Less Than':
+					whereClause = `${tableName}.${field} < '${moment.utc(DatePicker1Copy1.formattedDate).format('YYYY-MM-DD HH:mm:ss')}'`;
+					break;
+				case 'Between':
+					whereClause = `${tableName}.${field} BETWEEN       '${moment.utc(DatePicker1Copy1.formattedDate).format('YYYY-MM-DD HH:mm:ss')}' AND '${moment.utc(DatePicker1CopyCopy.formattedDate).format('YYYY-MM-DD HH:mm:ss')}'`;
+					break;
+				case 'Greater Than or Equal':
+					whereClause = `${tableName}.${field} >= '${moment.utc(DatePicker1Copy1.formattedDate).format('YYYY-MM-DD HH:mm:ss')}'`;
+					break;
+				case 'Less Than or Equal':
+					whereClause = `${tableName}.${field} <= '${moment.utc(DatePicker1Copy1.formattedDate).format('YYYY-MM-DD HH:mm:ss')}'`;
 					break;
 				default:
 					whereClause = ''; // Default (no filtering)
@@ -73,5 +97,5 @@ export default {
 			console.error("Error in applyCondition:", error);
 			throw new Error("An error occurred while building the filter condition.");
 		}
-	}
+	},
 }

@@ -31,6 +31,7 @@
     }
   },
   "columnOrder": [
+    "InsertedDate",
     "name",
     "ownershipImage",
     "id",
@@ -39,7 +40,7 @@
     "customColumn1",
     "customColumn2"
   ],
-  "columnUpdatedAt": 1732520942141,
+  "columnUpdatedAt": 1734254382121,
   "columnWidthMap": {
     "customColumn1": 143,
     "name": 254,
@@ -94,6 +95,9 @@
     },
     {
       "key": "primaryColumns.Status.cellBackground"
+    },
+    {
+      "key": "primaryColumns.InsertedDate.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -167,6 +171,40 @@
   "parentId": "dbwdh2qc56",
   "parentRowSpace": 10,
   "primaryColumns": {
+    "InsertedDate": {
+      "alias": "InsertedDate",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( moment.utc(currentRow[\"InsertedDate\"]).format('YYYY-MM-DD HH:mm:ss')))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "InsertedDate",
+      "index": 5,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Inserted Date",
+      "notation": "standard",
+      "originalId": "InsertedDate",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "Status": {
       "alias": "Status",
       "allowCellWrapping": false,

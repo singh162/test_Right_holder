@@ -12,6 +12,9 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -64,7 +67,7 @@
     "dropdown"
   ],
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"name\": \"Contains\",\n    \"code\": \"CONTAINS\"\n  },\n  {\n    \"name\": \"Does Not Contain\",\n    \"code\": \"DOES NOT CONTAIN\"\n  },\n  {\n    \"name\": \"Starts With\",\n    \"code\": \"STARTS WITH\"\n  },\n  {\n    \"name\": \"Ends With\",\n    \"code\": \"ENDS WITH\"\n  },\n  {\n    \"name\": \"Is Exactly\",\n    \"code\": \"IS EXACTLY\"\n  },\n  {\n    \"name\": \"Empty\",\n    \"code\": \"EMPTY\"\n  },\n  {\n    \"name\": \"Not Empty\",\n    \"code\": \"NOT EMPTY\"\n  }\n]\n",
+  "sourceData": "{{filterObject.filterArray}}",
   "tags": [
     "Suggested",
     "Select"

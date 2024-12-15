@@ -18,9 +18,16 @@
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
+    },
+    {
+      "key": "onOptionChange"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
   "hideCard": false,
   "iconSVG": "/static/media/icon.c94480439adb48de6883bb496aa5ef7d.svg",
   "isDeprecated": false,
@@ -51,6 +58,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
+  "onOptionChange": "{{filterObject.showFilterArray(Select4Copy1.selectedOptionLabel);}}",
   "optionLabel": "name",
   "optionValue": "code",
   "parentColumnSpace": 6.9375,
@@ -64,7 +72,7 @@
     "dropdown"
   ],
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"name\": \"Title Name\",\n    \"code\": \"name\"\n  },\n  {\n    \"name\": \"Status\",\n    \"code\": \"Status\"\n  }\n]\n",
+  "sourceData": "[\n{\n\"name\":\"Inserted Date\",\n\"code\":\"inserted_at\"\n},\n  {\n    \"name\": \"Title Name\",\n    \"code\": \"name\"\n  },\n  {\n    \"name\": \"Status\",\n    \"code\": \"Status\"\n  }\n]\n",
   "tags": [
     "Suggested",
     "Select"
